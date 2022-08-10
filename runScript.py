@@ -36,7 +36,7 @@ k0 = 1.0684e-07
 omega0 = 10
 rho = 1
 dynPressure = 0.5 * rho * U0**2
-J0 = 544.9469539353385
+J0 = 2.2839707927024846
 
 # Set the parameters for optimization
 daOptions = {
