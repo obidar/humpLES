@@ -22,7 +22,7 @@ import numpy as np
 # =============================================================================
 parser = argparse.ArgumentParser()
 parser.add_argument("--opt", help="optimizer to use", type=str, default="ipopt")
-parser.add_argument("--task", help="type of run to do", type=str, default="runPrimal")
+parser.add_argument("--task", help="type of run to do", type=str, default="opt")
 args = parser.parse_args()
 gcomm = MPI.COMM_WORLD
 

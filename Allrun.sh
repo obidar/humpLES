@@ -1,3 +1,4 @@
 #!/bin/bash
-decomposePar
-mpirun -np 4 simpleFoam -parallel 2>&1 | tee simplefoam.log
+. /home/dafoamuser/dafoam/loadDAFoam.sh
+cd /data/cop20ob/humpLES/fullUxLES
+mpirun -np 4 python runScript.py > logOpt.txt & ./autoSyncToGitHub.sh
