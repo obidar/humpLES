@@ -36,14 +36,14 @@ k0 = 1.0684e-07
 omega0 = 10
 rho = 1
 dynPressure = 0.5 * rho * U0**2
-J0 = 2.2839707927024846
+J0 = 3.5369831549362885
 
 # Set the parameters for optimization
 daOptions = {
     "designSurfaces": ["b6-humpWall"],
     "solverName": "DASimpleFoam",
     "useAD": {"mode": "reverse"}, 
-    "primalMinResTol": 1.0E-9,
+    "primalMinResTol": 1.0E-10,
     "objFunc": {
         "FI": {
             "velocity": {
@@ -132,7 +132,7 @@ DVGeo.addRefAxis("bodyAxis", xFraction=0.25, alignIndex="k")
 nCells = 44064
 beta0 = np.ones(nCells, dtype="d")
 #beta0[1] = 0.99
-DVGeo.addGeoDVGlobal("beta", value=beta0, func=betaFieldInversion, lower=0, upper=5, scale=1)
+DVGeo.addGeoDVGlobal("beta", value=beta0, func=betaFieldInversion, lower=1e-5, upper=2, scale=0.1)
 daOptions["designVar"]["beta"] = {"designVarType": "Field", "fieldName": "betaFieldInversion", "fieldType": "scalar"}
 
 # =============================================================================

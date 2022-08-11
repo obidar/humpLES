@@ -1,12 +1,12 @@
-Unexpected end of /proc/mounts line `overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/JRMYZ4OM2UFG2AXHUXIXYE5GYL:/var/lib/docker/overlay2/l/HIYCPOJV4LG3GEDHSVFCCXLG2U:/var/lib/docker/overlay2/l/SXAIZMGX5P5QUJE2TOIBAIECPO:/var/lib/docker/overlay2/l/DHWKFROMMZQ3O4GXVGBCDWBEZE:/var/lib/docker/overlay2/l/HZHS3C5KAL4UIGQLAV5XXLTWY3:/var/lib/docker/overlay2/l/65AC4LYEHSJ62MTONAWPMQKF2L:/var/lib/docker/overlay2/l/447O4EKRFSK7IR3EQ4TF4O57QQ:/var/lib/docker/overlay2/l/WIL4NHWQG6T3PBT5WKLZPDAL6D:/var/lib/docker/overlay2/l/CMXSZG6ESZEYV'
+Unexpected end of /proc/mounts line `overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/KEC6K44REVCU2XNLX4LNNTN7P7:/var/lib/docker/overlay2/l/HIYCPOJV4LG3GEDHSVFCCXLG2U:/var/lib/docker/overlay2/l/SXAIZMGX5P5QUJE2TOIBAIECPO:/var/lib/docker/overlay2/l/DHWKFROMMZQ3O4GXVGBCDWBEZE:/var/lib/docker/overlay2/l/HZHS3C5KAL4UIGQLAV5XXLTWY3:/var/lib/docker/overlay2/l/65AC4LYEHSJ62MTONAWPMQKF2L:/var/lib/docker/overlay2/l/447O4EKRFSK7IR3EQ4TF4O57QQ:/var/lib/docker/overlay2/l/WIL4NHWQG6T3PBT5WKLZPDAL6D:/var/lib/docker/overlay2/l/CMXSZG6ESZEYV'
 Unexpected end of /proc/mounts line `P2S5Y6JHBSYGH:/var/lib/docker/overlay2/l/7XGBWYQBL3RAZXPXH6ILNKIPR3:/var/lib/docker/overlay2/l/X53NUPGUAZQEY2EVTVPKOZNOGA:/var/lib/docker/overlay2/l/XVC4RH4UVGKILCIHF2X755F2EM:/var/lib/docker/overlay2/l/D7M2SLHQQ64MYEA2XPYISI2RVJ:/var/lib/docker/overlay2/l/K2JGRPKT3L53LSIACIYBLI7BZM:/var/lib/docker/overlay2/l/PS7KGTG35IDE5NL2FCTMAJ6EGG:/var/lib/docker/overlay2/l/5YC6DHI5G2JXZECQYKVFGBUAJO:/var/lib/docker/overlay2/l/VQ66UDJMEOAFWNGNI7MSFB4BUT:/var/lib/docker/overlay2/l/H57Z3ZZQ4PYHAWO7T22JXOCLXN:/var/lib/do'
 Unexpected end of /proc/mounts line `cker/overlay2/l/HRAYQ2BZYHGOWJ553Q56A7QNXY:/var/lib/docker/overlay2/l/TDNCV5VCOFQD7CX3YKWVJ3EWSC:/var/lib/docker/overlay2/l/OM5J4C6IVVZUQBTDZEXNYKVKER:/var/lib/docker/overlay2/l/DMMA2YE6WHP3LUKTZ5BYA3JA7C:/var/lib/docker/overlay2/l/ZRQP76NZW3CMZ4TMGNBQRRNXI7:/var/lib/docker/overlay2/l/XQP34L6TJNOYJD6V7AZIIXSDOY:/var/lib/docker/overlay2/l/4C5SP46QGXYKAN47ZQIIQTGKY3:/var/lib/docker/overlay2/l/WMYW5RNYZROQQO4ALSVFZSVNAK:/var/lib/docker/overlay2/l/645WZMNZ4QOPHOK7MIKUP3Q3KM:/var/lib/docker/overlay2/l/AQOFZFBRV'
 --------------------------------------------------------------------------
-[[42891,1],1]: A high-performance Open MPI point-to-point messaging module
+[[64566,1],1]: A high-performance Open MPI point-to-point messaging module
 was unable to find any relevant network interfaces:
 
 Module: OpenFabrics (openib)
-  Host: 32c1189e2818
+  Host: a14375c8a5d3
 
 Another transport will be used instead, although this may result in
 lower performance.
@@ -26,10 +26,10 @@ lower performance.
 Build  : v1812 OPENFOAM=1812
 Arch   : "LSB;label=32;scalar=64"
 Exec   : decomposePar
-Date   : Aug 10 2022
-Time   : 16:35:50
-Host   : 32c1189e2818
-PID    : 1110
+Date   : Aug 11 2022
+Time   : 09:39:31
+Host   : a14375c8a5d3
+PID    : 803
 I/O    : uncollated
 Case   : /home/dafoamuser/mount/Documents/GitHub/humpLES
 nProcs : 1
@@ -104,6 +104,8 @@ Processor 2
 Overriding DebugSwitches according to controlDict
     SolverPerformance 0;
 
+[a14375c8a5d3:00764] 3 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[a14375c8a5d3:00764] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
 
 Processor 3
     Number of cells = 11121
@@ -119,8 +121,6 @@ Max number of processor patches = 2 (33.33333333333334% above average 1.5)
 Max number of faces between processors = 233 (31.63841807909604% above average 177)
 
 Time = 0
-[32c1189e2818:01071] 3 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
-[32c1189e2818:01071] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
 
 Processor 0: field transfer
 Overriding DebugSwitches according to controlDict
@@ -150,7 +150,7 @@ Case   : /home/dafoamuser/mount/Documents/GitHub/humpLES
 nProcs : 4
 Hosts  :
 (
-    (32c1189e2818 4)
+    (a14375c8a5d3 4)
 )
 Pstream initialized with:
     floatTransfer      : 0
@@ -176,7 +176,7 @@ Case   : /home/dafoamuser/mount/Documents/GitHub/humpLES
 nProcs : 4
 Hosts  :
 (
-    (32c1189e2818 4)
+    (a14375c8a5d3 4)
 )
 Pstream initialized with:
     floatTransfer      : 0
@@ -284,7 +284,7 @@ maxIncorrectlyOrientedFaces: 0
 DAFoam option dictionary: 
 {
     solverName      DASimpleFoam;
-    primalMinResTol 1e-09;
+    primalMinResTol 1e-10;
     primalBC
     {
     }
@@ -510,7 +510,7 @@ Case   : /home/dafoamuser/mount/Documents/GitHub/humpLES
 nProcs : 4
 Hosts  :
 (
-    (32c1189e2818 4)
+    (a14375c8a5d3 4)
 )
 Pstream initialized with:
     floatTransfer      : 0
@@ -557,7 +557,7 @@ Case   : /home/dafoamuser/mount/Documents/GitHub/humpLES
 nProcs : 4
 Hosts  :
 (
-    (32c1189e2818 4)
+    (a14375c8a5d3 4)
 )
 Pstream initialized with:
     floatTransfer      : 0
@@ -630,49 +630,1132 @@ Mesh OK.
 
 Time = 1
 
-U Initial residual: (1.286099305450726e-09 2.995270283698274e-09 0.0315869812765737)
-U   Final residual: (2.810459932232038e-11 4.531181949482263e-11 6.94789323452758e-11)
-p Initial residual: 1.114784121276371e-09
-p   Final residual: 5.910279356478609e-11
-Time step continuity errors : sum local = 1.516974920863424e-11
-                                 global = 4.379481479556048e-12
-                             cumulative = 4.379481479556048e-12
-omega Initial residual: 9.176313533127035e-11
-        Final residual: 9.176313533127035e-11
-k Initial residual: 7.928183444456247e-10
-    Final residual: 3.321408273516666e-11
+U Initial residual: (9.969847813028594e-05 0.0001365815498107963 0.008855629816206044)
+U   Final residual: (5.109289950770852e-06 1.253261081665085e-05 0.0003498886762610284)
+p Initial residual: 0.0541366700275048
+p   Final residual: 0.005173029009354957
+Time step continuity errors : sum local = 0.000141161145175012
+                                 global = 9.817243296886244e-07
+                             cumulative = 9.817243296886244e-07
+omega Initial residual: 1.835744478670947e-08
+        Final residual: 7.661739579005934e-10
+k Initial residual: 8.178939242507373e-06
+    Final residual: 7.255419892711996e-07
 Bounding k>1e-16
-yPlus min: 0.0218901418041247 max: 1657.888931978961 mean: 735.3595791050678
-FI-velocity-fieldInversion: 2.283970806502438
+yPlus min: 0.02188892737280983 max: 1657.929950890382 mean: 735.7058283574974
+FI-velocity-fieldInversion: 3.808133784865063
 FI-beta-fieldInversion: 0
-ExecutionTime = 7.46 s  ClockTime = 12 s
+ExecutionTime = 7.22 s  ClockTime = 12 s
 
-Time = 2
-Minimal residual 9.780612100548512e-10 satisfied the prescribed tolerance 1e-09
+Time = 100
 
-FI-velocity-fieldInversion: 2.283970792702485
+U Initial residual: (1.537001447173921e-05 0.0002286975136678626 0.001831024524117822)
+U   Final residual: (1.224091417040362e-06 1.425533349926848e-05 7.295460911299254e-05)
+p Initial residual: 0.0008124472297879344
+p   Final residual: 7.658159651064918e-05
+Time step continuity errors : sum local = 2.046598702833443e-06
+                                 global = 2.675557259400591e-07
+                             cumulative = 1.249280055628683e-06
+omega Initial residual: 1.468563390373841e-08
+        Final residual: 9.07471958667911e-10
+k Initial residual: 4.64749849363859e-05
+    Final residual: 3.054691199557672e-06
+Bounding k>1e-16
+yPlus min: 0.01993962945576509 max: 1670.402731035989 mean: 742.7501599201581
+FI-velocity-fieldInversion: 3.739265820728607
+FI-beta-fieldInversion: 0
+ExecutionTime = 34.4 s  ClockTime = 44 s
+
+Time = 200
+
+U Initial residual: (1.082653854694109e-05 0.0001182034255632221 0.0002992059782180872)
+U   Final residual: (5.787526326131016e-07 9.277781777433034e-06 1.727738757235127e-05)
+p Initial residual: 0.0001496014531463426
+p   Final residual: 1.429636350783759e-05
+Time step continuity errors : sum local = 3.830031445189045e-07
+                                 global = -7.373802140563113e-08
+                             cumulative = 1.175542034223052e-06
+omega Initial residual: 6.337335287823502e-09
+        Final residual: 6.317673776191341e-10
+k Initial residual: 3.115802586153254e-05
+    Final residual: 1.512944720038983e-06
+Bounding k>1e-16
+yPlus min: 0.03052618197871314 max: 1670.363157479355 mean: 743.1639278829725
+FI-velocity-fieldInversion: 3.661288721495838
+FI-beta-fieldInversion: 0
+ExecutionTime = 66.7 s  ClockTime = 81 s
+
+Time = 300
+
+U Initial residual: (5.402891913975287e-06 6.184645695542455e-05 0.0002066037534595976)
+U   Final residual: (3.265535133892503e-07 3.048708423660301e-06 1.037694222545854e-05)
+p Initial residual: 3.483804443097444e-05
+p   Final residual: 3.310712194408688e-06
+Time step continuity errors : sum local = 8.88701004340095e-08
+                                 global = -6.650180694837652e-09
+                             cumulative = 1.168891853528215e-06
+omega Initial residual: 4.658512614585986e-09
+        Final residual: 2.55119145138726e-10
+k Initial residual: 2.490257156768842e-05
+    Final residual: 1.270776659228949e-06
+Bounding k>1e-16
+yPlus min: 0.03329715573149535 max: 1669.932744294766 mean: 743.3937955580614
+FI-velocity-fieldInversion: 3.61242217906609
+FI-beta-fieldInversion: 0
+ExecutionTime = 98.54000000000001 s  ClockTime = 118 s
+
+Time = 400
+
+U Initial residual: (3.368933396413949e-06 3.930058013442525e-05 0.0001905107796088205)
+U   Final residual: (1.995811297321953e-07 2.042220937405724e-06 1.682008785670876e-05)
+p Initial residual: 2.134275600972666e-05
+p   Final residual: 2.048028258147494e-06
+Time step continuity errors : sum local = 5.49729565044996e-08
+                                 global = -3.485495833700606e-09
+                             cumulative = 1.165406357694514e-06
+omega Initial residual: 3.517390370134383e-09
+        Final residual: 1.803394335371866e-10
+k Initial residual: 2.044278726222176e-05
+    Final residual: 1.008745542535849e-06
+Bounding k>1e-16
+yPlus min: 0.03537172700606849 max: 1669.368054647324 mean: 743.4956700499166
+FI-velocity-fieldInversion: 3.59397784828572
+FI-beta-fieldInversion: 0
+ExecutionTime = 128.76 s  ClockTime = 153 s
+
+Time = 500
+
+U Initial residual: (2.291669723342669e-06 2.460995135106709e-05 0.0001831499824557371)
+U   Final residual: (1.344119705280253e-07 1.286881929140077e-06 1.508230487085791e-05)
+p Initial residual: 2.092034000383033e-05
+p   Final residual: 1.904281747099068e-06
+Time step continuity errors : sum local = 5.117448770959677e-08
+                                 global = -3.98990958149211e-09
+                             cumulative = 1.161416448113022e-06
+omega Initial residual: 2.475403952306626e-09
+        Final residual: 1.304517696491581e-10
+k Initial residual: 1.600464598846281e-05
+    Final residual: 7.645559320675182e-07
+Bounding k>1e-16
+yPlus min: 0.02950867112939741 max: 1670.244171654556 mean: 743.6556790023003
+FI-velocity-fieldInversion: 3.583917436766762
+FI-beta-fieldInversion: 0
+ExecutionTime = 158.33 s  ClockTime = 186 s
+
+Time = 600
+
+U Initial residual: (1.464588007046114e-06 1.440739439096201e-05 0.0001670831548614727)
+U   Final residual: (8.044136417926658e-08 1.428750001466776e-06 1.343615661929238e-05)
+p Initial residual: 1.482360173292387e-05
+p   Final residual: 1.432597351875133e-06
+Time step continuity errors : sum local = 3.858602842309359e-08
+                                 global = 2.694415180402018e-09
+                             cumulative = 1.164110863293424e-06
+omega Initial residual: 1.435843311398988e-09
+        Final residual: 8.337914825255856e-11
+k Initial residual: 1.104726779197781e-05
+    Final residual: 1.002682720060179e-06
+Bounding k>1e-16
+yPlus min: 0.02341958552127489 max: 1671.907790676213 mean: 743.7826373994848
+FI-velocity-fieldInversion: 3.575890112526317
+FI-beta-fieldInversion: 0
+ExecutionTime = 186.16 s  ClockTime = 219 s
+
+Time = 700
+
+U Initial residual: (9.114385239540286e-07 7.446057956054098e-06 0.0001657749863276355)
+U   Final residual: (5.552919527884062e-08 6.534458276235595e-07 1.203335248321519e-05)
+p Initial residual: 1.038287819490785e-05
+p   Final residual: 9.377931877830196e-07
+Time step continuity errors : sum local = 2.531154614139055e-08
+                                 global = 2.217707263111538e-09
+                             cumulative = 1.166328570556535e-06
+omega Initial residual: 9.20319543955933e-10
+        Final residual: 5.548223979494356e-11
+k Initial residual: 5.311442973487243e-06
+    Final residual: 4.157719080589622e-07
+Bounding k>1e-16
+yPlus min: 0.01678687225205509 max: 1671.97680363014 mean: 743.7706320202784
+FI-velocity-fieldInversion: 3.568737734136617
+FI-beta-fieldInversion: 0
+ExecutionTime = 212.8 s  ClockTime = 250 s
+
+Time = 800
+
+U Initial residual: (7.250000759773508e-07 3.89925574804536e-06 0.0001569881341931343)
+U   Final residual: (4.320552896448418e-08 2.878101752841753e-07 1.074118559660182e-05)
+p Initial residual: 4.062403191416493e-06
+p   Final residual: 3.726278353774662e-07
+Time step continuity errors : sum local = 1.006494216892384e-08
+                                 global = -4.257923241617334e-10
+                             cumulative = 1.165902778232373e-06
+omega Initial residual: 6.596250098746914e-10
+        Final residual: 3.998393490140553e-11
+k Initial residual: 1.547225159439536e-06
+    Final residual: 1.084722688729794e-07
+Bounding k>1e-16
+yPlus min: 0.008368418556520653 max: 1671.248254100253 mean: 743.6963554103432
+FI-velocity-fieldInversion: 3.562319637079633
+FI-beta-fieldInversion: 0
+ExecutionTime = 240.95 s  ClockTime = 283 s
+
+Time = 900
+
+U Initial residual: (5.495061054121136e-07 2.03489102882386e-06 0.0001499051284312009)
+U   Final residual: (3.462546371532931e-08 1.293941822766038e-07 9.847643019976186e-06)
+p Initial residual: 2.249785793197922e-06
+p   Final residual: 2.132888075138283e-07
+Time step continuity errors : sum local = 5.761030805268542e-09
+                                 global = -2.037753716994222e-10
+                             cumulative = 1.165699002860674e-06
+omega Initial residual: 5.051683181270972e-10
+        Final residual: 3.017606183926808e-11
+k Initial residual: 3.999997206494698e-07
+    Final residual: 3.78057829949905e-08
+Bounding k>1e-16
+yPlus min: 0.01113776162316611 max: 1671.032306722351 mean: 743.6597950049077
+FI-velocity-fieldInversion: 3.556915675747468
+FI-beta-fieldInversion: 0
+ExecutionTime = 270.68 s  ClockTime = 318 s
+
+Time = 1000
+
+U Initial residual: (4.476194276047006e-07 1.446850752450039e-06 0.0001428233425187958)
+U   Final residual: (2.899130942092293e-08 8.528617376614492e-08 8.842982140154087e-06)
+p Initial residual: 1.294420646655802e-06
+p   Final residual: 1.127617523538037e-07
+Time step continuity errors : sum local = 3.045696718841679e-09
+                                 global = -1.174118634005679e-10
+                             cumulative = 1.165581590997273e-06
+omega Initial residual: 3.938745736927302e-10
+        Final residual: 2.329730567993258e-11
+k Initial residual: 2.084818522373046e-07
+    Final residual: 1.032948545063846e-08
+Bounding k>1e-16
+yPlus min: 0.01622519694785753 max: 1670.997528578688 mean: 743.6472039735346
+FI-velocity-fieldInversion: 3.552602023898914
+FI-beta-fieldInversion: 0
+ExecutionTime = 300.68 s  ClockTime = 353 s
+
+Time = 1100
+
+U Initial residual: (3.799046593184303e-07 1.203504027160602e-06 0.00014231731968448)
+U   Final residual: (2.467690465983397e-08 7.045167163078407e-08 8.387079160604386e-06)
+p Initial residual: 1.043989356162309e-06
+p   Final residual: 8.656223026145508e-08
+Time step continuity errors : sum local = 2.338172039960775e-09
+                                 global = -7.704261902800697e-11
+                             cumulative = 1.165504548378245e-06
+omega Initial residual: 3.161450122513566e-10
+        Final residual: 1.881757960592847e-11
+k Initial residual: 1.45959869962254e-07
+    Final residual: 7.756055846550599e-09
+Bounding k>1e-16
+yPlus min: 0.01938936674049655 max: 1670.952239180066 mean: 743.6367709279449
+FI-velocity-fieldInversion: 3.549249260471082
+FI-beta-fieldInversion: 0
+ExecutionTime = 330 s  ClockTime = 388 s
+
+Time = 1200
+
+U Initial residual: (3.230779685345143e-07 9.916222180928781e-07 0.0001377730174815156)
+U   Final residual: (2.104654167681496e-08 5.835088788568725e-08 7.606382803835429e-06)
+p Initial residual: 8.242477925612629e-07
+p   Final residual: 6.67196443347937e-08
+Time step continuity errors : sum local = 1.802305661091446e-09
+                                 global = -5.144927160979081e-11
+                             cumulative = 1.165453099106636e-06
+omega Initial residual: 2.603511783676367e-10
+        Final residual: 1.56552913779344e-11
+k Initial residual: 1.254017223126317e-07
+    Final residual: 6.281477279844403e-09
+Bounding k>1e-16
+yPlus min: 0.0215850995832043 max: 1670.901923943354 mean: 743.6266196216653
+FI-velocity-fieldInversion: 3.54666072974228
+FI-beta-fieldInversion: 0
+ExecutionTime = 358.97 s  ClockTime = 422 s
+
+Time = 1300
+
+U Initial residual: (2.746025619174623e-07 8.030580599959555e-07 0.0001348754990866866)
+U   Final residual: (1.796550903504585e-08 4.682046837510404e-08 7.099224293170573e-06)
+p Initial residual: 6.522255658910422e-07
+p   Final residual: 5.358468857061149e-08
+Time step continuity errors : sum local = 1.447573927998812e-09
+                                 global = -3.145426808275404e-11
+                             cumulative = 1.165421644838553e-06
+omega Initial residual: 2.187327531016584e-10
+        Final residual: 1.314521412163664e-11
+k Initial residual: 1.013071682281463e-07
+    Final residual: 5.028941116306741e-09
+Bounding k>1e-16
+yPlus min: 0.02318627912275523 max: 1670.8588745717 mean: 743.6178871839909
+FI-velocity-fieldInversion: 3.544651628702465
+FI-beta-fieldInversion: 0
+ExecutionTime = 389.03 s  ClockTime = 457 s
+
+Time = 1400
+
+U Initial residual: (2.334729830682874e-07 6.505975633901103e-07 0.0001314704058110902)
+U   Final residual: (1.535102013649912e-08 3.745140974020889e-08 6.700028491751659e-06)
+p Initial residual: 5.29560800638362e-07
+p   Final residual: 4.998349235814603e-08
+Time step continuity errors : sum local = 1.350364198569033e-09
+                                 global = -3.276237314480445e-11
+                             cumulative = 1.165388882465408e-06
+omega Initial residual: 1.868914331346675e-10
+        Final residual: 1.118964856311579e-11
+k Initial residual: 8.262144195614892e-08
+    Final residual: 4.107237496268162e-09
+Bounding k>1e-16
+yPlus min: 0.02438444284375254 max: 1670.824053881039 mean: 743.6107073960502
+FI-velocity-fieldInversion: 3.543082251989329
+FI-beta-fieldInversion: 0
+ExecutionTime = 419.35 s  ClockTime = 492 s
+
+Time = 1500
+
+U Initial residual: (1.985825103579434e-07 5.278130357523331e-07 0.0001264279536111804)
+U   Final residual: (1.312917038685468e-08 3.005985779750081e-08 6.120065148705518e-06)
+p Initial residual: 4.290066283436451e-07
+p   Final residual: 4.035401885255134e-08
+Time step continuity errors : sum local = 1.090270996965896e-09
+                                 global = -3.57164044101986e-11
+                             cumulative = 1.165353166060998e-06
+omega Initial residual: 1.62367776804341e-10
+        Final residual: 9.668340919394231e-12
+k Initial residual: 6.810667408138202e-08
+    Final residual: 3.385446860244817e-09
+Bounding k>1e-16
+yPlus min: 0.02529445477609037 max: 1670.79568996497 mean: 743.6048053177516
+FI-velocity-fieldInversion: 3.541855661211524
+FI-beta-fieldInversion: 0
+ExecutionTime = 449.64 s  ClockTime = 527 s
+
+Time = 1600
+
+U Initial residual: (1.687798626630586e-07 4.28336681043647e-07 0.0001272631862134525)
+U   Final residual: (1.122188495884932e-08 2.41669742072348e-08 5.77137084565029e-06)
+p Initial residual: 3.464251995897967e-07
+p   Final residual: 3.175718580646622e-08
+Time step continuity errors : sum local = 8.580474473322513e-10
+                                 global = -4.999505965061259e-11
+                             cumulative = 1.165303171001347e-06
+omega Initial residual: 1.426062430653528e-10
+        Final residual: 8.455734386636822e-12
+k Initial residual: 5.634246333016112e-08
+    Final residual: 2.797539907374124e-09
+Bounding k>1e-16
+yPlus min: 0.02599259274317128 max: 1670.772401389203 mean: 743.5999293086314
+FI-velocity-fieldInversion: 3.540895704185697
+FI-beta-fieldInversion: 0
+ExecutionTime = 479.41 s  ClockTime = 562 s
+
+Time = 1700
+
+U Initial residual: (1.430665690480929e-07 3.477881871849715e-07 0.0001262787386171781)
+U   Final residual: (9.560985754605986e-09 1.944105660450269e-08 5.699933837236444e-06)
+p Initial residual: 2.812241723069596e-07
+p   Final residual: 2.575523742870115e-08
+Time step continuity errors : sum local = 6.959129415691165e-10
+                                 global = -4.094750346116488e-11
+                             cumulative = 1.165262223497886e-06
+omega Initial residual: 1.256691689176558e-10
+        Final residual: 7.427981423763106e-12
+k Initial residual: 4.66140482094223e-08
+    Final residual: 2.312532090200879e-09
+Bounding k>1e-16
+yPlus min: 0.0265318155289802 max: 1670.753277145779 mean: 743.5959000802659
+FI-velocity-fieldInversion: 3.540140828018033
+FI-beta-fieldInversion: 0
+ExecutionTime = 511.89 s  ClockTime = 605 s
+
+Time = 1800
+
+U Initial residual: (1.209161424754775e-07 2.824348734582066e-07 0.0001218005507775175)
+U   Final residual: (8.116324292331573e-09 1.562728259581541e-08 4.998590035313678e-06)
+p Initial residual: 2.28321612047519e-07
+p   Final residual: 2.269526899694513e-08
+Time step continuity errors : sum local = 6.132571511313224e-10
+                                 global = -5.924693608114399e-11
+                             cumulative = 1.165202976561805e-06
+omega Initial residual: 1.10230632238964e-10
+        Final residual: 6.505613745265856e-12
+k Initial residual: 3.853803279899273e-08
+    Final residual: 1.911285143197265e-09
+Bounding k>1e-16
+yPlus min: 0.0269504143868207 max: 1670.737613326955 mean: 743.5925773092771
+FI-velocity-fieldInversion: 3.53954309135226
+FI-beta-fieldInversion: 0
+ExecutionTime = 545.52 s  ClockTime = 647 s
+
+Time = 1900
+
+U Initial residual: (1.019439211607792e-07 2.298260297839057e-07 0.0001211779515141883)
+U   Final residual: (6.868099561151005e-09 1.257664905089788e-08 5.018647434230325e-06)
+p Initial residual: 1.848808361118304e-07
+p   Final residual: 1.727939092058534e-08
+Time step continuity errors : sum local = 4.669307161420537e-10
+                                 global = -5.660570735578609e-11
+                             cumulative = 1.16514637085445e-06
+omega Initial residual: 9.618964358576387e-11
+        Final residual: 5.663791426621667e-12
+k Initial residual: 3.184624971375014e-08
+    Final residual: 1.579449965030976e-09
+Bounding k>1e-16
+yPlus min: 0.02727683333040004 max: 1670.724810373738 mean: 743.5898416060771
+FI-velocity-fieldInversion: 3.539066338321867
+FI-beta-fieldInversion: 0
+ExecutionTime = 579.6 s  ClockTime = 695 s
+
+Time = 2000
+
+U Initial residual: (8.575610541830492e-08 1.872866302267518e-07 0.0001184952217373119)
+U   Final residual: (5.79527683152759e-09 1.013597787160547e-08 4.814977291208759e-06)
+p Initial residual: 1.501953934414652e-07
+p   Final residual: 1.46729504348619e-08
+Time step continuity errors : sum local = 3.965111424356161e-10
+                                 global = -5.748414489779515e-11
+                             cumulative = 1.165088886709552e-06
+omega Initial residual: 8.34671021613344e-11
+        Final residual: 4.903508705774278e-12
+k Initial residual: 2.631545954275819e-08
+    Final residual: 1.305324915728349e-09
+Bounding k>1e-16
+yPlus min: 0.02753247278955647 max: 1670.714353153687 mean: 743.5875903923402
+FI-velocity-fieldInversion: 3.538683585000849
+FI-beta-fieldInversion: 0
+ExecutionTime = 611.15 s  ClockTime = 734 s
+
+Time = 2100
+
+U Initial residual: (7.199451185859965e-08 1.529229355149551e-07 0.0001179770570308592)
+U   Final residual: (4.877712969494221e-09 8.185993412124397e-09 4.800325718282845e-06)
+p Initial residual: 1.227073343485608e-07
+p   Final residual: 1.182313672677497e-08
+Time step continuity errors : sum local = 3.19508683187025e-10
+                                 global = -5.249179471787514e-11
+                             cumulative = 1.165036394914834e-06
+omega Initial residual: 7.204113534589869e-11
+        Final residual: 4.22381351102008e-12
+k Initial residual: 2.175011335827249e-08
+    Final residual: 1.078929275212754e-09
+Bounding k>1e-16
+yPlus min: 0.02773352750752829 max: 1670.705807507614 mean: 743.5857371894214
+FI-velocity-fieldInversion: 3.538374599073643
+FI-beta-fieldInversion: 0
+ExecutionTime = 643.0700000000001 s  ClockTime = 773 s
+
+Time = 2200
+
+U Initial residual: (6.031815822033278e-08 1.250690104212888e-07 0.0001182924940836678)
+U   Final residual: (4.095146263215937e-09 6.625454604274807e-09 4.469269306692072e-06)
+p Initial residual: 9.929092124901426e-08
+p   Final residual: 9.872179979083178e-09
+Time step continuity errors : sum local = 2.667924886777121e-10
+                                 global = -4.773328999086768e-11
+                             cumulative = 1.164988661624843e-06
+omega Initial residual: 6.1857603299235e-11
+        Final residual: 3.621164244624769e-12
+k Initial residual: 1.79806257473598e-08
+    Final residual: 8.918513505306486e-10
+Bounding k>1e-16
+yPlus min: 0.02789230701489363 max: 1670.69881611175 mean: 743.5842104714233
+FI-velocity-fieldInversion: 3.538124018930895
+FI-beta-fieldInversion: 0
+ExecutionTime = 675.99 s  ClockTime = 812 s
+
+Time = 2300
+
+U Initial residual: (5.043502022676715e-08 1.024480797597352e-07 0.0001177403329579622)
+U   Final residual: (3.429934644469611e-09 5.374757706538838e-09 4.414124582040232e-06)
+p Initial residual: 8.111640117172589e-08
+p   Final residual: 7.524548542132356e-09
+Time step continuity errors : sum local = 2.033529312289476e-10
+                                 global = -3.875781538642236e-11
+                             cumulative = 1.164949903809457e-06
+omega Initial residual: 5.286312021044293e-11
+        Final residual: 3.089892240970001e-12
+k Initial residual: 1.486636536864135e-08
+    Final residual: 7.371721993423352e-10
+Bounding k>1e-16
+yPlus min: 0.02801820239806995 max: 1670.693089413721 mean: 743.5829517997728
+FI-velocity-fieldInversion: 3.537920035948432
+FI-beta-fieldInversion: 0
+ExecutionTime = 707.97 s  ClockTime = 848 s
+
+Time = 2400
+
+U Initial residual: (4.209100276562464e-08 8.396373685090884e-08 0.0001151026341879953)
+U   Final residual: (2.866381027781441e-09 4.365393996923639e-09 4.153568805307236e-06)
+p Initial residual: 6.681417877135961e-08
+p   Final residual: 6.556512715839396e-09
+Time step continuity errors : sum local = 1.771947273896695e-10
+                                 global = 1.974626510898158e-11
+                             cumulative = 1.164969650074566e-06
+omega Initial residual: 4.496808283822316e-11
+        Final residual: 2.625007136100522e-12
+k Initial residual: 1.229012331728894e-08
+    Final residual: 6.091782193939605e-10
+Bounding k>1e-16
+yPlus min: 0.02811840827210487 max: 1670.68839396704 mean: 743.5819135949929
+FI-velocity-fieldInversion: 3.53775346749388
+FI-beta-fieldInversion: 0
+ExecutionTime = 737.17 s  ClockTime = 881 s
+
+Time = 2500
+
+U Initial residual: (3.506529034841103e-08 6.884107675093873e-08 0.0001164498589049384)
+U   Final residual: (2.390483951759648e-09 3.549612104524377e-09 4.263672806298645e-06)
+p Initial residual: 5.457746083872966e-08
+p   Final residual: 5.411922471840538e-09
+Time step continuity errors : sum local = 1.462633995715632e-10
+                                 global = 1.361509244407856e-11
+                             cumulative = 1.16498326516701e-06
+omega Initial residual: 3.809372655554442e-11
+        Final residual: 2.221237327399716e-12
+k Initial residual: 1.015723377254594e-08
+    Final residual: 5.032178630178664e-10
+Bounding k>1e-16
+yPlus min: 0.02819845743686608 max: 1670.684541203478 mean: 743.5810570272751
+FI-velocity-fieldInversion: 3.537617105947935
+FI-beta-fieldInversion: 0
+ExecutionTime = 765.59 s  ClockTime = 912 s
+
+Time = 2600
+
+U Initial residual: (2.916261980578823e-08 5.649770909684836e-08 0.000114851442852695)
+U   Final residual: (1.989804564346768e-09 2.890899098950689e-09 4.012704827752659e-06)
+p Initial residual: 4.469420319347709e-08
+p   Final residual: 4.104144528244989e-09
+Time step continuity errors : sum local = 1.109206487083635e-10
+                                 global = 7.3913596120532e-12
+                             cumulative = 1.164990656526622e-06
+omega Initial residual: 3.216213129762319e-11
+        Final residual: 1.873028371816498e-12
+k Initial residual: 8.391401117849956e-09
+    Final residual: 4.154894860851625e-10
+Bounding k>1e-16
+yPlus min: 0.02826262360404589 max: 1670.681378240833 mean: 743.5803502854661
+FI-velocity-fieldInversion: 3.537505245552575
+FI-beta-fieldInversion: 0
+ExecutionTime = 794.35 s  ClockTime = 944 s
+
+Time = 2700
+
+U Initial residual: (2.421390968549023e-08 4.642914997814438e-08 0.0001140807355305368)
+U   Final residual: (1.653351935321319e-09 2.358384462094789e-09 3.870340258940572e-06)
+p Initial residual: 3.660148514136791e-08
+p   Final residual: 3.418187971826958e-09
+Time step continuity errors : sum local = 9.238280135596335e-11
+                                 global = 4.510671496112473e-12
+                             cumulative = 1.164995167198118e-06
+omega Initial residual: 2.706011317984326e-11
+        Final residual: 1.574310027526838e-12
+k Initial residual: 6.92855962705049e-09
+    Final residual: 3.428773943365646e-10
+Bounding k>1e-16
+yPlus min: 0.02831422140724342 max: 1670.678780671053 mean: 743.5797672234592
+FI-velocity-fieldInversion: 3.537413334978714
+FI-beta-fieldInversion: 0
+ExecutionTime = 821.3099999999999 s  ClockTime = 974 s
+
+Time = 2800
+
+U Initial residual: (2.007591864345011e-08 3.81455323026048e-08 0.0001141362806725802)
+U   Final residual: (1.371513008217917e-09 1.924897653057816e-09 4.055777124940585e-06)
+p Initial residual: 2.983827624778934e-08
+p   Final residual: 2.578715788989841e-09
+Time step continuity errors : sum local = 6.969513083992205e-11
+                                 global = 2.893294789540207e-12
+                             cumulative = 1.164998060492907e-06
+omega Initial residual: 2.269637459298572e-11
+        Final residual: 1.319291511700962e-12
+k Initial residual: 5.717582547745383e-09
+    Final residual: 2.827986516736504e-10
+Bounding k>1e-16
+yPlus min: 0.02835583301888508 max: 1670.676646895331 mean: 743.579286284844
+FI-velocity-fieldInversion: 3.537337720405954
+FI-beta-fieldInversion: 0
+ExecutionTime = 849.02 s  ClockTime = 1005 s
+
+Time = 2900
+
+U Initial residual: (1.662213429618335e-08 3.133997484507889e-08 0.0001161030173630515)
+U   Final residual: (1.136007938783866e-09 1.5721295063853e-09 3.960393957049107e-06)
+p Initial residual: 2.452293670414482e-08
+p   Final residual: 2.225534354738309e-09
+Time step continuity errors : sum local = 6.015013088381252e-11
+                                 global = 3.504546130298584e-12
+                             cumulative = 1.165001565039038e-06
+omega Initial residual: 1.89828209150952e-11
+        Final residual: 1.102523568181891e-12
+k Initial residual: 4.715680716215546e-09
+    Final residual: 2.331187817327404e-10
+Bounding k>1e-16
+yPlus min: 0.02838947963482344 max: 1670.674893853153 mean: 743.5788896825946
+FI-velocity-fieldInversion: 3.537275452147888
+FI-beta-fieldInversion: 0
+ExecutionTime = 876.72 s  ClockTime = 1035 s
+
+Time = 3000
+
+U Initial residual: (1.374759507227935e-08 2.574587300112657e-08 0.0001118433343625063)
+U   Final residual: (9.397093928380137e-10 1.284776195476729e-09 3.773474830245096e-06)
+p Initial residual: 2.000070360399556e-08
+p   Final residual: 1.970255264934194e-09
+Time step continuity errors : sum local = 5.325112518299825e-11
+                                 global = 2.637404238550264e-12
+                             cumulative = 1.165004202443276e-06
+omega Initial residual: 1.583719307510777e-11
+        Final residual: 9.190533171527553e-13
+k Initial residual: 3.887330624373494e-09
+    Final residual: 1.920682934706968e-10
+Bounding k>1e-16
+yPlus min: 0.02841674993923756 max: 1670.673453441756 mean: 743.57856270774
+FI-velocity-fieldInversion: 3.537224137403051
+FI-beta-fieldInversion: 0
+ExecutionTime = 903.84 s  ClockTime = 1066 s
+
+Time = 3100
+
+U Initial residual: (1.135659318366591e-08 2.116690893294654e-08 0.0001111934834228594)
+U   Final residual: (7.76359329494704e-10 1.051238928695124e-09 3.75688156290882e-06)
+p Initial residual: 1.63742944524912e-08
+p   Final residual: 1.533041015637926e-09
+Time step continuity errors : sum local = 4.143420634703886e-11
+                                 global = 2.57530727527211e-12
+                             cumulative = 1.165006777750551e-06
+omega Initial residual: 1.318100671527824e-11
+        Final residual: 7.644305091459426e-13
+k Initial residual: 3.202859225124162e-09
+    Final residual: 1.581705987238323e-10
+Bounding k>1e-16
+yPlus min: 0.0284388990604152 max: 1670.672269804465 mean: 743.5782932054965
+FI-velocity-fieldInversion: 3.537181826173589
+FI-beta-fieldInversion: 0
+ExecutionTime = 932.6799999999999 s  ClockTime = 1100 s
+
+Time = 3200
+
+U Initial residual: (9.37159041517856e-09 1.741283155449563e-08 0.0001160579776588133)
+U   Final residual: (6.407072475447623e-10 8.611020429219104e-10 3.758928555941052e-06)
+p Initial residual: 1.341252244277594e-08
+p   Final residual: 1.325253857579069e-09
+Time step continuity errors : sum local = 3.58185518259711e-11
+                                 global = 2.135631239100208e-12
+                             cumulative = 1.16500891338179e-06
+omega Initial residual: 1.094603238552103e-11
+        Final residual: 6.344899537590515e-13
+k Initial residual: 2.637735485022638e-09
+    Final residual: 1.30200128720615e-10
+Bounding k>1e-16
+yPlus min: 0.02845692211737329 max: 1670.671297079287 mean: 743.5780711236456
+FI-velocity-fieldInversion: 3.53714692552877
+FI-beta-fieldInversion: 0
+ExecutionTime = 960.9299999999999 s  ClockTime = 1130 s
+
+Time = 3300
+
+U Initial residual: (7.725271625183411e-09 1.431342711909406e-08 0.0001144879843953529)
+U   Final residual: (5.282451475349314e-10 7.048817554360114e-10 3.869299103307785e-06)
+p Initial residual: 1.11260399009003e-08
+p   Final residual: 1.106322160205393e-09
+Time step continuity errors : sum local = 2.990120350635872e-11
+                                 global = 1.186627961624412e-12
+                             cumulative = 1.165010100009752e-06
+omega Initial residual: 9.072103210870386e-12
+        Final residual: 5.256569666546532e-13
+k Initial residual: 2.171479161069332e-09
+    Final residual: 1.071358947520157e-10
+Bounding k>1e-16
+yPlus min: 0.02847161178776185 max: 1670.670497603134 mean: 743.5778881524291
+FI-velocity-fieldInversion: 3.537118130163669
+FI-beta-fieldInversion: 0
+ExecutionTime = 988.52 s  ClockTime = 1163 s
+
+Time = 3400
+
+U Initial residual: (6.36667273495957e-09 1.174509235248575e-08 0.0001133220717936076)
+U   Final residual: (4.352026688322097e-10 5.766699543622955e-10 3.583363832097956e-06)
+p Initial residual: 8.999655409644457e-09
+p   Final residual: 7.874564169894746e-10
+Time step continuity errors : sum local = 2.128360772440162e-11
+                                 global = 7.665123969618873e-13
+                             cumulative = 1.165010866522149e-06
+omega Initial residual: 7.506375942286598e-12
+        Final residual: 4.348090523575168e-13
+k Initial residual: 1.787133891211919e-09
+    Final residual: 8.813058261231008e-11
+Bounding k>1e-16
+yPlus min: 0.02848360183346248 max: 1670.669840440038 mean: 743.5777374253064
+FI-velocity-fieldInversion: 3.537094368147471
+FI-beta-fieldInversion: 0
+ExecutionTime = 1016.76 s  ClockTime = 1195 s
+
+Time = 3500
+
+U Initial residual: (5.24223939708648e-09 9.665253781819613e-09 0.0001133504574440047)
+U   Final residual: (3.58277152473859e-10 4.731012540112969e-10 3.748293343165166e-06)
+p Initial residual: 7.359763098381157e-09
+p   Final residual: 6.413317623714297e-10
+Time step continuity errors : sum local = 1.733383934608071e-11
+                                 global = 6.702989536648468e-13
+                             cumulative = 1.165011536821103e-06
+omega Initial residual: 6.202325445300438e-12
+        Final residual: 3.591334139589099e-13
+k Initial residual: 1.470388204624668e-09
+    Final residual: 7.247776954736419e-11
+Bounding k>1e-16
+yPlus min: 0.02849340061816847 max: 1670.669300197695 mean: 743.5776132757655
+FI-velocity-fieldInversion: 3.537074757243396
+FI-beta-fieldInversion: 0
+ExecutionTime = 1044.87 s  ClockTime = 1226 s
+
+Time = 3600
+
+U Initial residual: (4.314253232211655e-09 7.945072284436394e-09 0.0001125709840626221)
+U   Final residual: (2.947755103942927e-10 3.878957606732587e-10 3.706409290504138e-06)
+p Initial residual: 6.045483842626399e-09
+p   Final residual: 5.458366747467789e-10
+Time step continuity errors : sum local = 1.475277732388694e-11
+                                 global = 5.917781212793096e-13
+                             cumulative = 1.165012128599224e-06
+omega Initial residual: 5.117939988564068e-12
+        Final residual: 2.962566960851092e-13
+k Initial residual: 1.209554018473853e-09
+    Final residual: 5.959358574216633e-11
+Bounding k>1e-16
+yPlus min: 0.0285014173471135 max: 1670.668856008491 mean: 743.577511024291
+FI-velocity-fieldInversion: 3.537058570994707
+FI-beta-fieldInversion: 0
+ExecutionTime = 1073.6 s  ClockTime = 1258 s
+
+Time = 3700
+
+U Initial residual: (3.549027095945403e-09 6.531529630936202e-09 0.0001158387050857917)
+U   Final residual: (2.424116227964977e-10 3.181528432128947e-10 3.770495745735211e-06)
+p Initial residual: 4.965423244666346e-09
+p   Final residual: 4.619563594842458e-10
+Time step continuity errors : sum local = 1.248601990723696e-11
+                                 global = 5.285630475847162e-13
+                             cumulative = 1.165012657162272e-06
+omega Initial residual: 4.218311620926287e-12
+        Final residual: 2.441085239214766e-13
+k Initial residual: 9.948576799441358e-10
+    Final residual: 4.89933783800695e-11
+Bounding k>1e-16
+yPlus min: 0.02850798233735501 max: 1670.668490735933 mean: 743.5774268106096
+FI-velocity-fieldInversion: 3.537045210464915
+FI-beta-fieldInversion: 0
+ExecutionTime = 1102.19 s  ClockTime = 1289 s
+
+Time = 3800
+
+U Initial residual: (2.91856607556615e-09 5.369998564168515e-09 0.0001147861683856081)
+U   Final residual: (1.992735202372447e-10 2.6103771704164e-10 3.729815797496698e-06)
+p Initial residual: 4.077607465056668e-09
+p   Final residual: 3.892879858711561e-10
+Time step continuity errors : sum local = 1.052160829600136e-11
+                                 global = 4.643031695163199e-13
+                             cumulative = 1.165013121465441e-06
+omega Initial residual: 3.473372535474792e-12
+        Final residual: 2.009578519505941e-13
+k Initial residual: 8.182130825180257e-10
+    Final residual: 4.027574867182818e-11
+Bounding k>1e-16
+yPlus min: 0.02851336292317426 max: 1670.668190305365 mean: 743.5773574517996
+FI-velocity-fieldInversion: 3.537034181510573
+FI-beta-fieldInversion: 0
+ExecutionTime = 1130.7 s  ClockTime = 1320 s
+
+Time = 3900
+
+U Initial residual: (2.399510977071301e-09 4.415550034309607e-09 0.0001096477706895479)
+U   Final residual: (1.637638947859641e-10 2.142437501645173e-10 3.624962627254115e-06)
+p Initial residual: 3.348418577146286e-09
+p   Final residual: 3.272307161094705e-10
+Time step continuity errors : sum local = 8.844513177029604e-12
+                                 global = 4.058410320286635e-13
+                             cumulative = 1.165013527306473e-06
+omega Initial residual: 2.857676930507881e-12
+        Final residual: 1.652995826798036e-13
+k Initial residual: 6.729278758118536e-10
+    Final residual: 3.310891958302075e-11
+Bounding k>1e-16
+yPlus min: 0.02851777597120627 max: 1670.667943156154 mean: 743.5773003243825
+FI-velocity-fieldInversion: 3.537025076397541
+FI-beta-fieldInversion: 0
+ExecutionTime = 1159.43 s  ClockTime = 1352 s
+
+Time = 4000
+
+U Initial residual: (1.972441566078296e-09 3.631288645440969e-09 0.000112203542329982)
+U   Final residual: (1.345538068272043e-10 1.758923973922355e-10 3.59335621865353e-06)
+p Initial residual: 2.750064757888349e-09
+p   Final residual: 2.742536991752068e-10
+Time step continuity errors : sum local = 7.412892407404435e-12
+                                 global = 3.527182325511275e-13
+                             cumulative = 1.165013880024706e-06
+omega Initial residual: 2.349445281500829e-12
+        Final residual: 1.35883738342608e-13
+k Initial residual: 5.534685214085563e-10
+    Final residual: 2.721855326691671e-11
+Bounding k>1e-16
+yPlus min: 0.02852139776692812 max: 1670.667739792712 mean: 743.5772532668304
+FI-velocity-fieldInversion: 3.537017558676539
+FI-beta-fieldInversion: 0
+ExecutionTime = 1187.86 s  ClockTime = 1384 s
+
+Time = 4100
+
+U Initial residual: (1.621333685183359e-09 2.987934842347766e-09 0.0001131709261647915)
+U   Final residual: (1.105505129051097e-10 1.444801961334098e-10 3.784854158374333e-06)
+p Initial residual: 2.25364697827113e-09
+p   Final residual: 2.241017660220876e-10
+Time step continuity errors : sum local = 6.057151964305149e-12
+                                 global = 2.942214674588411e-13
+                             cumulative = 1.165014174246173e-06
+omega Initial residual: 1.931664668924277e-12
+        Final residual: 1.116859428429712e-13
+k Initial residual: 4.563820555424053e-10
+    Final residual: 2.244758942914795e-11
+Bounding k>1e-16
+yPlus min: 0.02852437191555512 max: 1670.667572429295 mean: 743.5772145022783
+FI-velocity-fieldInversion: 3.537011349881637
+FI-beta-fieldInversion: 0
+ExecutionTime = 1218.48 s  ClockTime = 1418 s
+
+Time = 4200
+
+U Initial residual: (1.332776647487667e-09 2.457916472692574e-09 0.0001121014684136796)
+U   Final residual: (9.081784694280393e-11 1.18696430020024e-10 3.621676599061867e-06)
+p Initial residual: 1.840014118242928e-09
+p   Final residual: 1.792172805249971e-10
+Time step continuity errors : sum local = 4.844070137840822e-12
+                                 global = 2.525070288348556e-13
+                             cumulative = 1.165014426753202e-06
+omega Initial residual: 1.586857916231556e-12
+        Final residual: 9.173686805519436e-14
+k Initial residual: 3.760418865323702e-10
+    Final residual: 1.849392485955428e-11
+Bounding k>1e-16
+yPlus min: 0.02852681552503739 max: 1670.667434643321 mean: 743.5771825598448
+FI-velocity-fieldInversion: 3.537006221993576
+FI-beta-fieldInversion: 0
+ExecutionTime = 1247.14 s  ClockTime = 1450 s
+
+Time = 4300
+
+U Initial residual: (1.095365491902867e-09 2.022395457450181e-09 0.0001133356542893134)
+U   Final residual: (7.46047655617003e-11 9.750837642756634e-11 3.977370611670253e-06)
+p Initial residual: 1.521277097184659e-09
+p   Final residual: 1.337796964670903e-10
+Time step continuity errors : sum local = 3.616146296643419e-12
+                                 global = 1.645441715611044e-13
+                             cumulative = 1.165014591297374e-06
+omega Initial residual: 1.30278909377403e-12
+        Final residual: 7.529298435507818e-14
+k Initial residual: 3.097154255375829e-10
+    Final residual: 1.522881591156686e-11
+Bounding k>1e-16
+yPlus min: 0.02852882408744195 max: 1670.66732116834 mean: 743.5771562341647
+FI-velocity-fieldInversion: 3.537001986281903
+FI-beta-fieldInversion: 0
+ExecutionTime = 1276.4 s  ClockTime = 1481 s
+
+Time = 4400
+
+U Initial residual: (9.004982510097031e-10 1.663948095671396e-09 0.0001135665042260699)
+U   Final residual: (6.12963393814372e-11 8.014827205344618e-11 3.69871589889889e-06)
+p Initial residual: 1.239787099780837e-09
+p   Final residual: 1.086209578309032e-10
+Time step continuity errors : sum local = 2.935757892126371e-12
+                                 global = 1.449956697301534e-13
+                             cumulative = 1.165014736293043e-06
+omega Initial residual: 1.069165935617456e-12
+        Final residual: 6.181586797417895e-14
+k Initial residual: 2.557130504151173e-10
+    Final residual: 1.257520949784254e-11
+Bounding k>1e-16
+yPlus min: 0.0285304757741311 max: 1670.66722768511 mean: 743.5771345316119
+FI-velocity-fieldInversion: 3.536998486777969
+FI-beta-fieldInversion: 0
+ExecutionTime = 1304.62 s  ClockTime = 1513 s
+
+Time = 4500
+
+U Initial residual: (7.40332683548696e-10 1.369903651443387e-09 0.0001088301125119802)
+U   Final residual: (5.036552086680467e-11 6.590601662466493e-11 3.44373795127885e-06)
+p Initial residual: 1.018840398890749e-09
+p   Final residual: 1.006668989575787e-10
+Time step continuity errors : sum local = 2.721022023584025e-12
+                                 global = 1.570650042334121e-13
+                             cumulative = 1.165014893358048e-06
+omega Initial residual: 8.760540537099092e-13
+        Final residual: 5.062807231657973e-14
+k Initial residual: 2.111813890002099e-10
+    Final residual: 1.03796045137885e-11
+Bounding k>1e-16
+yPlus min: 0.02853183452681197 max: 1670.667150649081 mean: 743.5771166364607
+FI-velocity-fieldInversion: 3.536995595006458
+FI-beta-fieldInversion: 0
+ExecutionTime = 1333.83 s  ClockTime = 1545 s
+
+Time = 4600
+
+U Initial residual: (6.088086531565265e-10 1.128071556041755e-09 0.0001129538196850686)
+U   Final residual: (4.138750853658213e-11 5.420164548372984e-11 3.741595804437712e-06)
+p Initial residual: 8.372150771441172e-10
+p   Final residual: 7.386203526148969e-11
+Time step continuity errors : sum local = 1.99679271792063e-12
+                                 global = 1.024084417532322e-13
+                             cumulative = 1.165014995766489e-06
+omega Initial residual: 7.198562229592563e-13
+        Final residual: 4.161752174369579e-14
+k Initial residual: 1.73962922076367e-10
+    Final residual: 8.552928765066141e-12
+Bounding k>1e-16
+yPlus min: 0.02853295270533571 max: 1670.667087148862 mean: 743.5771018775969
+FI-velocity-fieldInversion: 3.536993204457291
+FI-beta-fieldInversion: 0
+ExecutionTime = 1362.36 s  ClockTime = 1577 s
+
+Time = 4700
+
+U Initial residual: (5.007475522673012e-10 9.300032176844426e-10 0.0001125335498380652)
+U   Final residual: (3.401527418874683e-11 4.46114114570992e-11 3.478136886511735e-06)
+p Initial residual: 6.88347209702376e-10
+p   Final residual: 6.840111441068058e-11
+Time step continuity errors : sum local = 1.848917252651572e-12
+                                 global = 1.106893072331924e-13
+                             cumulative = 1.165015106455796e-06
+omega Initial residual: 5.910053485615761e-13
+        Final residual: 3.41719445175867e-14
+k Initial residual: 1.433371538149032e-10
+    Final residual: 7.045008214056209e-12
+Bounding k>1e-16
+yPlus min: 0.02853387324436466 max: 1670.667034788044 mean: 743.5770897017977
+FI-velocity-fieldInversion: 3.536991227861058
+FI-beta-fieldInversion: 0
+ExecutionTime = 1390.42 s  ClockTime = 1609 s
+
+Time = 4800
+
+U Initial residual: (4.118981700924256e-10 7.65628464282802e-10 0.0001114067115592986)
+U   Final residual: (2.796703728830361e-11 3.669844790247479e-11 3.514506968811684e-06)
+p Initial residual: 5.683817690381042e-10
+p   Final residual: 5.140817536086492e-11
+Time step continuity errors : sum local = 1.389773871303099e-12
+                                 global = 7.284834346248822e-14
+                             cumulative = 1.16501517930414e-06
+omega Initial residual: 4.844314119427076e-13
+        Final residual: 2.800990474376022e-14
+k Initial residual: 1.185872238194196e-10
+    Final residual: 5.828955569837013e-12
+Bounding k>1e-16
+yPlus min: 0.02853463134788278 max: 1670.666991598837 mean: 743.5770796542829
+FI-velocity-fieldInversion: 3.536989592866102
+FI-beta-fieldInversion: 0
+ExecutionTime = 1418.95 s  ClockTime = 1641 s
+
+Time = 4900
+
+U Initial residual: (3.389307521509657e-10 6.31871651202402e-10 0.0001097827495121182)
+U   Final residual: (2.299703160147369e-11 3.024503981489947e-11 3.576851309076112e-06)
+p Initial residual: 4.690478329393833e-10
+p   Final residual: 4.246791655940858e-11
+Time step continuity errors : sum local = 1.148281629034501e-12
+                                 global = 6.321652796844512e-14
+                             cumulative = 1.165015242520668e-06
+omega Initial residual: 3.975700988527516e-13
+        Final residual: 2.297755873167862e-14
+k Initial residual: 9.786249226189722e-11
+    Final residual: 9.784562233432536e-12
+Bounding k>1e-16
+yPlus min: 0.02853525590825247 max: 1670.666955962174 mean: 743.5770713605419
+FI-velocity-fieldInversion: 3.536988240069517
+FI-beta-fieldInversion: 0
+ExecutionTime = 1448.19 s  ClockTime = 1674 s
+
+Time = 5000
+
+U Initial residual: (2.790159439292305e-10 5.21012662354581e-10 0.0001138952152655437)
+U   Final residual: (1.891721370310346e-11 2.490631015072109e-11 3.561609311709081e-06)
+p Initial residual: 3.844594191549698e-10
+p   Final residual: 3.80412223027838e-11
+Time step continuity errors : sum local = 1.028610274893225e-12
+                                 global = 6.482548105716936e-14
+                             cumulative = 1.165015307346149e-06
+omega Initial residual: 3.262858723061855e-13
+        Final residual: 1.886512895667688e-14
+k Initial residual: 8.087736217160579e-11
+    Final residual: 8.086592869730607e-12
+Bounding k>1e-16
+yPlus min: 0.02853577063589361 max: 1670.666926547748 mean: 743.5770645125737
+FI-velocity-fieldInversion: 3.536987120264998
+FI-beta-fieldInversion: 0
+ExecutionTime = 1477.15 s  ClockTime = 1706 s
+
+Time = 5100
+
+U Initial residual: (2.29732566641896e-10 4.292863750516522e-10 0.000111970457188602)
+U   Final residual: (1.556619460580669e-11 2.050442145703656e-11 3.569791788076578e-06)
+p Initial residual: 3.17910190881825e-10
+p   Final residual: 2.886729301975647e-11
+Time step continuity errors : sum local = 7.804751461509766e-13
+                                 global = 4.4550848508815e-14
+                             cumulative = 1.165015351896997e-06
+omega Initial residual: 2.677980974871021e-13
+        Final residual: 1.548787488845207e-14
+k Initial residual: 6.69024238405966e-11
+    Final residual: 6.690071761908148e-12
+Bounding k>1e-16
+yPlus min: 0.02853619500476737 max: 1670.666902260274 mean: 743.5770588565352
+FI-velocity-fieldInversion: 3.536986193029203
+FI-beta-fieldInversion: 0
+ExecutionTime = 1509.19 s  ClockTime = 1748 s
+
+Time = 5200
+
+U Initial residual: (1.892500297236943e-10 3.546511688615834e-10 0.0001105529633067476)
+U   Final residual: (1.281220280495805e-11 1.691153992785992e-11 3.571633692024536e-06)
+p Initial residual: 2.605710279699361e-10
+p   Final residual: 2.3139631613822e-11
+Time step continuity errors : sum local = 6.261908126832549e-13
+                                 global = 3.576311420835932e-14
+                             cumulative = 1.165015387660112e-06
+omega Initial residual: 2.202965816214184e-13
+        Final residual: 1.274530108427914e-14
+k Initial residual: 5.522200634323806e-11
+    Final residual: 2.713451736387711e-12
+Bounding k>1e-16
+yPlus min: 0.02853654500464831 max: 1670.666882198804 mean: 743.5770541834873
+FI-velocity-fieldInversion: 3.536985424992403
+FI-beta-fieldInversion: 0
+ExecutionTime = 1538.19 s  ClockTime = 1780 s
+
+Time = 5300
+
+U Initial residual: (1.559137369099319e-10 2.928178946351149e-10 0.0001121679320721554)
+U   Final residual: (1.054846883438592e-11 1.394955685387062e-11 3.863115049229015e-06)
+p Initial residual: 2.161215601449125e-10
+p   Final residual: 1.965189117187394e-11
+Time step continuity errors : sum local = 5.320492346012758e-13
+                                 global = 3.035850989505335e-14
+                             cumulative = 1.165015418018622e-06
+omega Initial residual: 1.810243734172168e-13
+        Final residual: 1.048242973555758e-14
+k Initial residual: 4.559841158912028e-11
+    Final residual: 2.239820470241584e-12
+Bounding k>1e-16
+yPlus min: 0.02853683377773203 max: 1670.666865621801 mean: 743.5770503213267
+FI-velocity-fieldInversion: 3.536984788654361
+FI-beta-fieldInversion: 0
+ExecutionTime = 1567.97 s  ClockTime = 1814 s
+
+Time = 5400
+
+U Initial residual: (1.285197666328592e-10 2.417236000950017e-10 0.0001068445412495508)
+U   Final residual: (8.689290198141881e-12 1.149909754287355e-11 3.35825349800938e-06)
+p Initial residual: 1.779748387642848e-10
+p   Final residual: 1.586512809889391e-11
+Time step continuity errors : sum local = 4.295846467815496e-13
+                                 global = 2.507592382085761e-14
+                             cumulative = 1.165015443094545e-06
+omega Initial residual: 1.48502613691239e-13
+        Final residual: 8.593538353165506e-15
+k Initial residual: 3.780718082505206e-11
+    Final residual: 3.780020790318156e-12
+Bounding k>1e-16
+yPlus min: 0.02853707212276351 max: 1670.666851919683 mean: 743.5770471284527
+FI-velocity-fieldInversion: 3.536984261221956
+FI-beta-fieldInversion: 0
+ExecutionTime = 1598.82 s  ClockTime = 1848 s
+
+Time = 5500
+
+U Initial residual: (1.059690264768305e-10 1.996809340946694e-10 0.0001113051986244492)
+U   Final residual: (7.159570703247147e-12 9.492396720203785e-12 3.669995328510834e-06)
+p Initial residual: 1.464331938088791e-10
+p   Final residual: 1.307126650062656e-11
+Time step continuity errors : sum local = 3.543294301667869e-13
+                                 global = 2.14359520198745e-14
+                             cumulative = 1.165015464530497e-06
+omega Initial residual: 1.222394701017833e-13
+        Final residual: 7.082539621866458e-15
+k Initial residual: 3.125622213400281e-11
+    Final residual: 1.535353136813075e-12
+Bounding k>1e-16
+yPlus min: 0.02853726892010462 max: 1670.666840590372 mean: 743.577044488148
+FI-velocity-fieldInversion: 3.536983823906866
+FI-beta-fieldInversion: 0
+ExecutionTime = 1632.26 s  ClockTime = 1888 s
+
+Time = 5600
+
+U Initial residual: (8.739944794170456e-11 1.648799379512479e-10 0.0001110104746183549)
+U   Final residual: (5.901548738710704e-12 7.831122007347592e-12 3.43576236509535e-06)
+p Initial residual: 1.218395912313167e-10
+p   Final residual: 1.120267868324937e-11
+Time step continuity errors : sum local = 3.037077637596082e-13
+                                 global = 1.79691684188586e-14
+                             cumulative = 1.165015482499666e-06
+omega Initial residual: 1.003736770856694e-13
+        Final residual: 5.819174797514533e-15
+k Initial residual: 2.590656826124991e-11
+    Final residual: 2.590223203636354e-12
+Bounding k>1e-16
+yPlus min: 0.02853743147210824 max: 1670.66683121947 mean: 743.57704230408
+FI-velocity-fieldInversion: 3.536983461252735
+FI-beta-fieldInversion: 0
+ExecutionTime = 1664.2 s  ClockTime = 1927 s
+
+Time = 5700
+
+U Initial residual: (7.211897959905422e-11 1.363598063175253e-10 0.0001138549160137945)
+U   Final residual: (4.865947013768899e-12 6.469487232371033e-12 3.804285245162709e-06)
+p Initial residual: 1.006510310609077e-10
+p   Final residual: 9.314638535624685e-12
+Time step continuity errors : sum local = 2.530672823701611e-13
+                                 global = 1.500927565955968e-14
+                             cumulative = 1.165015497508942e-06
+omega Initial residual: 8.272305347014443e-14
+        Final residual: 4.803138797298958e-15
+k Initial residual: 2.141033128823099e-11
+    Final residual: 1.051406179776868e-12
+Bounding k>1e-16
+yPlus min: 0.02853756578671903 max: 1670.666823466469 mean: 743.5770404969882
+FI-velocity-fieldInversion: 3.536983160395738
+FI-beta-fieldInversion: 0
+ExecutionTime = 1695.08 s  ClockTime = 1962 s
+
+Time = 5702
+Minimal residual 9.981550978796286e-11 satisfied the prescribed tolerance 1e-10
+
+FI-velocity-fieldInversion: 3.536983154936288
 FI-beta-fieldInversion: 0
 Printing Primal Residual Statistics.
-U Residual Norm2: (0.0002810497946879706 8.796442268657183e-06 1.877641193092565e-12)
-U Residual Mean: (4.927826891237219e-07 2.206417041323777e-08 3.528336498716135e-15)
-U Residual Max: (1.053526735048105e-05 2.270950332193544e-07 9.074317035369509e-14)
-p Residual Norm2: 2.345736304001497e-05
-p Residual Mean: 4.290742772256302e-09
-p Residual Max: 9.48354223860374e-06
-omega Residual Norm2: 90.61356050061855
-omega Residual Mean: 0.09630570718384381
-omega Residual Max: 5.136764951713141
-k Residual Norm2: 5.397578532276546e-06
-k Residual Mean: 1.128342997064865e-08
-k Residual Max: 1.317574426751052e-07
-phi Residual Norm2: 5.820768904396854e-08
-phi Residual Mean: 3.549262491215011e-11
-phi Residual Max: 1.276799075847019e-09
+U Residual Norm2: (4.986330337560557e-05 1.730590490561056e-06 3.565577770393976e-14)
+U Residual Mean: (8.152017508243316e-08 4.340210974073453e-09 6.769925731590134e-17)
+U Residual Max: (1.850891543128674e-06 7.812755398184379e-08 6.172596555869684e-15)
+p Residual Norm2: 1.102265317394265e-07
+p Residual Mean: 1.392104297225824e-10
+p Residual Max: 1.405580301559131e-08
+omega Residual Norm2: 0.06822000986632233
+omega Residual Mean: 6.820667403341562e-05
+omega Residual Max: 0.003427464730446376
+k Residual Norm2: 5.78161809683518e-07
+k Residual Mean: 1.340411778803355e-09
+k Residual Max: 1.673239960320816e-08
+phi Residual Norm2: 9.131665013870108e-09
+phi Residual Mean: 5.235643236278757e-12
+phi Residual Max: 2.083500690925824e-10
 End
 
 Objective Functions: 
-{'FI': 2.2839707927024846, 'fail': False}
-Flow Runtime: 5.20061
+{'FI': 3.5369831549362885, 'fail': False}
+Flow Runtime: 1954.45
 /home/dafoamuser/dafoam/packages/miniconda3/lib/python3.6/site-packages/idwarp/UnstructuredMesh.py:112: ResourceWarning: unclosed file <_io.BufferedReader name='/home/dafoamuser/dafoam/packages/miniconda3/lib/python3.6/site-packages/idwarp/idwarp.so'>
   self.warp = MExt('idwarp', [curDir], debug=debug)._module
 /home/dafoamuser/dafoam/packages/miniconda3/lib/python3.6/site-packages/dafoam/pyDAFoam.py:3524: ComplexWarning: Casting complex values to real discards the imaginary part
