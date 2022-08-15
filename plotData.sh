@@ -1,5 +1,5 @@
 #!/bin/bash
-time=0
+time=0.00000067
 profilesDir="postProcessing/extractVelocityProfiles/$time"
 profilesBaseDir="postProcessing/extractVelocityProfiles/0"
 profilesLESDir="postProcessing/extractLES/0"
@@ -39,9 +39,10 @@ gnuplot<<EOF
     set style line 2 linecolor rgb 'red' linetype 1 linewidth 1.3 pointtype -1 pointsize 0
     set style line 3 linecolor rgb '#008080' linetype 0 linewidth 0 pointtype 5 pointsize 0.25
     set style line 4 linecolor rgb 'blue' linetype 3 linewidth 1.3 pointtype -1 pointsize 0
+    set style line 5 linecolor rgb 'black' linetype 1 linewidth 1.1 pointsize 0
     set size ratio -1; set xlabel "x/H"; set ylabel "C_p"
     set yrange[0.5:-1] reverse; 
-    set xrange[-0.5:2]; 
+    set xrange[-0.75:2]; 
     set ytics nomirror; set xtics nomirror;
     set xtics 0.5; 
     set ytics 0.5;
@@ -51,10 +52,9 @@ gnuplot<<EOF
     set format x "%.1f"
     set format y "%.1f"
     set ytics font ", 8"; set xtics font ", 8";
-    plot "postProcessing/CpData.csv" using 1:(\$2 + 0.06) w points pt 7 ps 0.15 lc rgb "black" title "Expt.", \
-         "$CpRefDir/p_lowerWall.raw" using 1:((\$4 / (0.5 * $Uinf * $Uinf))) title "SST Baseline" with lines linestyle 2, \
-         "$CpDir/p_lowerWall.raw" using 1:((\$4 / (0.5 * $Uinf * $Uinf))) title "Field inversion" with lines linestyle 4
-
+    plot "postProcessing/CpLES.csv" u 1:2 title "LES" with lines linestyle 5, \
+         "$CpRefDir/p_lowerWall.raw" using 1:(((\$4 - 0.03545594148526757)/ (0.5 * $Uinf * $Uinf))) title "SST Baseline" with lines linestyle 2, \
+         "$CpDir/p_lowerWall.raw" using 1:(((\$4-0.02933895491736917) / (0.5 * $Uinf * $Uinf))) title "Field inversion" with lines linestyle 4
      #######################################################################################################
      reset
     set multiplot layout 2,4 rowsfirst margins 0.1,0.98,0.13,0.98 spacing 0.03
