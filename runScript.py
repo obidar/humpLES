@@ -132,7 +132,7 @@ DVGeo.addRefAxis("bodyAxis", xFraction=0.25, alignIndex="k")
 nCells = 44064
 beta0 = np.ones(nCells, dtype="d")
 #beta0[1] = 0.99
-DVGeo.addGeoDVGlobal("beta", value=beta0, func=betaFieldInversion, lower=1e-5, upper=2, scale=0.1)
+DVGeo.addGeoDVGlobal("beta", value=beta0, func=betaFieldInversion, lower=1e-5, upper=2, scale=1)
 daOptions["designVar"]["beta"] = {"designVarType": "Field", "fieldName": "betaFieldInversion", "fieldType": "scalar"}
 
 # =============================================================================
@@ -171,7 +171,7 @@ if args.task == "opt":
     DVGeo.addVariablesPyOpt(optProb)
     DVCon.addConstraintsPyOpt(optProb)
 
-    optProb.addObj("FI", scale=1)
+    optProb.addObj("FI", scale=0.1)
     # optProb.addCon("CL", lower=CL_target, upper=CL_target, scale=1)
 
     if gcomm.rank == 0:
