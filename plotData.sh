@@ -41,7 +41,7 @@ gnuplot<<EOF
     set style line 4 linecolor rgb 'blue' linetype 3 linewidth 1.3 pointtype -1 pointsize 0
     set style line 5 linecolor rgb 'black' linetype 1 linewidth 1.1 pointsize 0
     set size ratio -1; set xlabel "x/H"; set ylabel "C_p"
-    set yrange[0.5:-1] reverse; 
+    set yrange[-1:0.5]; 
     set xrange[-0.75:2]; 
     set ytics nomirror; set xtics nomirror;
     set xtics 0.5; 
