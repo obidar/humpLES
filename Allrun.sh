@@ -1,4 +1,4 @@
 #!/bin/bash
 . /home/dafoamuser/dafoam/loadDAFoam.sh
-cd /fastdata/cop20ob/humpLES/gaSparse0p05l1em5
+cd /fastdata/cop20ob/humpLES/gaSparse0p05l1em7
 mpirun -np 4 python runScript.py > logOpt.txt & ./autoSyncToGitHub.sh
