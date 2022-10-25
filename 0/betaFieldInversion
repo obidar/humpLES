@@ -10,7 +10,7 @@ FoamFile
     version     2.0;
     format      ascii;
     class       volScalarField;
-    location    "1792";
+    location    "0.00000001";
     object      betaFieldInversion;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
@@ -36,7 +36,8 @@ boundaryField
     }
     b5-outlet
     {
-        type            zeroGradient;
+        type            fixedValue;
+        value           uniform 1;
     }
     b6-humpWall
     {

@@ -36,7 +36,7 @@ k0 = 1.0684e-07
 omega0 = 10
 rho = 1
 dynPressure = 0.5 * rho * U0**2
-J0 = 544.9469539353385
+J0 = 1.1455
 
 # Set the parameters for optimization
 daOptions = {
@@ -51,26 +51,20 @@ daOptions = {
                 "source": "boxToCell",
                 "min": [-10.0, -10.0, -10.0],
                 "max": [10.0, 10.0, 10.0],
-                "stateType": "scalar",
-                "stateName": "U",
-                "stateRefName": "profileRefFieldInversion",
-                "varTypeFieldInversion": "profile",
+		"data": "USingleComponentData",
+		"velocityComponent": [1.0, 0.0, 0.0], 
                 "scale": 1,
                 "addToAdjoint": True,
-		        "weightedSum": True,
-		        "weight": 1.0 / J0, 
+		 "weightedSum": True,
+		 "weight": 1.0 / J0, 
             },
             "beta": {
                 "type": "fieldInversion",
                 "source": "boxToCell",
                 "min": [-10.0, -10.0, -10.0],
                 "max": [10.0, 10.0, 10.0],
-                "stateType": "scalar",
-                "stateName": "betaFieldInversion",
-                "stateRefName": "betaRefFieldInversion",
-                "varTypeFieldInversion": "volume",
+		 "data": "beta",
                 "scale": 1e-6,
-                "patchNames": ["b6-humpWall"],
                 "addToAdjoint": True,
                 "weightedSum": False,
             },
@@ -132,7 +126,7 @@ DVGeo.addRefAxis("bodyAxis", xFraction=0.25, alignIndex="k")
 nCells = 44064
 beta0 = np.ones(nCells, dtype="d")
 #beta0[1] = 0.99
-DVGeo.addGeoDVGlobal("beta", value=beta0, func=betaFieldInversion, lower=0, upper=5, scale=1)
+DVGeo.addGeoDVGlobal("beta", value=beta0, func=betaFieldInversion, lower=1e-5, upper=3, scale=1)
 daOptions["designVar"]["beta"] = {"designVarType": "Field", "fieldName": "betaFieldInversion", "fieldType": "scalar"}
 
 # =============================================================================
