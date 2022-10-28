@@ -6541,7 +6541,6 @@ internalField   nonuniform List<scalar>
 1e+16
 1e+16
 1e+16
-0.2328630000000000
 1e+16
 1e+16
 1e+16
@@ -7073,7 +7072,6 @@ internalField   nonuniform List<scalar>
 1e+16
 1e+16
 1e+16
-0.3366550000000000
 1e+16
 1e+16
 1e+16
@@ -7995,6 +7993,7 @@ internalField   nonuniform List<scalar>
 1e+16
 1e+16
 1e+16
+1.0618500000000000
 1e+16
 1e+16
 1e+16
@@ -8321,6 +8320,7 @@ internalField   nonuniform List<scalar>
 1e+16
 1e+16
 1e+16
+1.0860799999999999
 1e+16
 1e+16
 1e+16
@@ -8665,7 +8665,6 @@ internalField   nonuniform List<scalar>
 1e+16
 1e+16
 1e+16
-0.1667900000000000
 1e+16
 1e+16
 1e+16
@@ -9187,6 +9186,7 @@ internalField   nonuniform List<scalar>
 1e+16
 1e+16
 1e+16
+1.1283099999999999
 1e+16
 1e+16
 1e+16
@@ -9205,7 +9205,6 @@ internalField   nonuniform List<scalar>
 1e+16
 1e+16
 1e+16
-0.1841600000000000
 1e+16
 1e+16
 1e+16
@@ -9303,6 +9302,7 @@ internalField   nonuniform List<scalar>
 1e+16
 1e+16
 1e+16
+1.1032599999999999
 1e+16
 1e+16
 1e+16
@@ -9627,6 +9627,7 @@ internalField   nonuniform List<scalar>
 1e+16
 1e+16
 1e+16
+1.1067800000000001
 1e+16
 1e+16
 1e+16
@@ -9733,6 +9734,7 @@ internalField   nonuniform List<scalar>
 1e+16
 1e+16
 1e+16
+1.1118600000000001
 1e+16
 1e+16
 1e+16
@@ -9745,7 +9747,6 @@ internalField   nonuniform List<scalar>
 1e+16
 1e+16
 1e+16
-0.2074970000000000
 1e+16
 1e+16
 1e+16
@@ -10136,6 +10137,7 @@ internalField   nonuniform List<scalar>
 1e+16
 1e+16
 1e+16
+1.2230200000000000
 1e+16
 1e+16
 1e+16
@@ -10285,7 +10287,6 @@ internalField   nonuniform List<scalar>
 1e+16
 1e+16
 1e+16
-0.2161370000000000
 1e+16
 1e+16
 1e+16
@@ -10386,6 +10387,7 @@ internalField   nonuniform List<scalar>
 1e+16
 1e+16
 1e+16
+1.1028199999999999
 1e+16
 1e+16
 1e+16
@@ -10934,7 +10936,6 @@ internalField   nonuniform List<scalar>
 1e+16
 1e+16
 1e+16
-0.2641950000000000
 1e+16
 1e+16
 1e+16
@@ -11139,7 +11140,9 @@ internalField   nonuniform List<scalar>
 1e+16
 1e+16
 1e+16
+1.1240399999999999
 1e+16
+1.1157699999999999
 1e+16
 1e+16
 1e+16
@@ -11570,6 +11573,7 @@ internalField   nonuniform List<scalar>
 1e+16
 1e+16
 1e+16
+1.1241300000000001
 1e+16
 1e+16
 1e+16
@@ -11582,7 +11586,6 @@ internalField   nonuniform List<scalar>
 1e+16
 1e+16
 1e+16
-0.2586960000000000
 1e+16
 1e+16
 1e+16
@@ -12212,6 +12215,7 @@ internalField   nonuniform List<scalar>
 1e+16
 1e+16
 1e+16
+1.1634199999999999
 1e+16
 1e+16
 1e+16
@@ -12446,7 +12450,6 @@ internalField   nonuniform List<scalar>
 1e+16
 1e+16
 1e+16
-0.2513230000000000
 1e+16
 1e+16
 1e+16
@@ -13529,7 +13532,6 @@ internalField   nonuniform List<scalar>
 1e+16
 1e+16
 1e+16
-0.3452950000000000
 1e+16
 1e+16
 1e+16
@@ -15340,9 +15342,7 @@ internalField   nonuniform List<scalar>
 1e+16
 1e+16
 1e+16
-1e+16
-1e+16
-1e+16
+1.1835300000000000
 1e+16
 1e+16
 1e+16
@@ -20515,7 +20515,7 @@ internalField   nonuniform List<scalar>
 1e+16
 1e+16
 1e+16
-1e+16
+1.1027800000000001
 1e+16
 1e+16
 1e+16
@@ -24962,7 +24962,7 @@ internalField   nonuniform List<scalar>
 1e+16
 1e+16
 1e+16
-1e+16
+1.1137400000000000
 1e+16
 1e+16
 1e+16
@@ -26982,7 +26982,6 @@ internalField   nonuniform List<scalar>
 1e+16
 1e+16
 1e+16
-0.0139299000000000
 1e+16
 1e+16
 1e+16
@@ -27128,6 +27127,7 @@ internalField   nonuniform List<scalar>
 1e+16
 1e+16
 1e+16
+1.1024000000000000
 1e+16
 1e+16
 1e+16
@@ -30569,7 +30569,7 @@ internalField   nonuniform List<scalar>
 1e+16
 1e+16
 1e+16
-1e+16
+1.0890400000000000
 1e+16
 1e+16
 1e+16
@@ -31219,6 +31219,7 @@ internalField   nonuniform List<scalar>
 1e+16
 1e+16
 1e+16
+1.0849599999999999
 1e+16
 1e+16
 1e+16
@@ -32194,6 +32195,7 @@ internalField   nonuniform List<scalar>
 1e+16
 1e+16
 1e+16
+1.0818500000000000
 1e+16
 1e+16
 1e+16
@@ -32389,7 +32391,6 @@ internalField   nonuniform List<scalar>
 1e+16
 1e+16
 1e+16
-0.5170410000000000
 1e+16
 1e+16
 1e+16
@@ -32913,7 +32914,6 @@ internalField   nonuniform List<scalar>
 1e+16
 1e+16
 1e+16
-0.0296481000000000
 1e+16
 1e+16
 1e+16
@@ -33155,6 +33155,7 @@ internalField   nonuniform List<scalar>
 1e+16
 1e+16
 1e+16
+1.0452999999999999
 1e+16
 1e+16
 1e+16
@@ -33258,7 +33259,6 @@ internalField   nonuniform List<scalar>
 1e+16
 1e+16
 1e+16
-0.8516300000000000
 1e+16
 1e+16
 1e+16
@@ -34947,7 +34947,7 @@ internalField   nonuniform List<scalar>
 1e+16
 1e+16
 1e+16
-0.0472888000000000
+1e+16
 1e+16
 1e+16
 1e+16
@@ -34986,7 +34986,6 @@ internalField   nonuniform List<scalar>
 1e+16
 1e+16
 1e+16
-0.8506910000000000
 1e+16
 1e+16
 1e+16
@@ -36142,7 +36141,8 @@ internalField   nonuniform List<scalar>
 1e+16
 1e+16
 1e+16
-0.1744270000000000
+1e+16
+1e+16
 1e+16
 1e+16
 1e+16
@@ -37030,7 +37030,7 @@ internalField   nonuniform List<scalar>
 1e+16
 1e+16
 1e+16
-0.5639610000000000
+1e+16
 1e+16
 1e+16
 1e+16
@@ -37678,7 +37678,7 @@ internalField   nonuniform List<scalar>
 1e+16
 1e+16
 1e+16
-0.6018620000000000
+1e+16
 1e+16
 1e+16
 1e+16
@@ -38323,7 +38323,7 @@ internalField   nonuniform List<scalar>
 1e+16
 1e+16
 1e+16
-0.5847290000000001
+1e+16
 1e+16
 1e+16
 1e+16
