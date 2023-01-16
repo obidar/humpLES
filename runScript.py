@@ -36,7 +36,7 @@ k0 = 1.0684e-07
 omega0 = 10
 rho = 1
 dynPressure = 0.5 * rho * U0**2
-J0 = 544.9469539353385
+J0 = 22652
 
 # Set the parameters for optimization
 daOptions = {
@@ -51,26 +51,19 @@ daOptions = {
                 "source": "boxToCell",
                 "min": [-10.0, -10.0, -10.0],
                 "max": [10.0, 10.0, 10.0],
-                "stateType": "scalar",
-                "stateName": "U",
-                "stateRefName": "profileRefFieldInversion",
-                "varTypeFieldInversion": "profile",
+                "data": "UData", 
                 "scale": 1,
-                "addToAdjoint": True,
-		        "weightedSum": True,
-		        "weight": 1.0 / J0, 
-            },
+                "addToAdjoint": True, 
+                "weightedSum": True, 
+                "weight": 1/J0
+            },              
             "beta": {
                 "type": "fieldInversion",
                 "source": "boxToCell",
                 "min": [-10.0, -10.0, -10.0],
                 "max": [10.0, 10.0, 10.0],
-                "stateType": "scalar",
-                "stateName": "betaFieldInversion",
-                "stateRefName": "betaRefFieldInversion",
-                "varTypeFieldInversion": "volume",
+                "data": "beta",
                 "scale": 1e-6,
-                "patchNames": ["b6-humpWall"],
                 "addToAdjoint": True,
                 "weightedSum": False,
             },
