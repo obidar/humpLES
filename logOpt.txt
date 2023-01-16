@@ -1,0 +1,479 @@
+Unexpected end of /proc/mounts line `overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/FV2B575AKKEKK7IMJ3X3A4MEK6:/var/lib/docker/overlay2/l/4S7SMCN4QI4A5SKHDRP7XPDZ2T:/var/lib/docker/overlay2/l/7PKD5XIC3K5VQHKCWEQGHR5ANL:/var/lib/docker/overlay2/l/C4ITRVQSTCEKJH2IKHU2UBUAV7:/var/lib/docker/overlay2/l/WOYLBFCMO3YQSH6BZDJHZ5UHMH:/var/lib/docker/overlay2/l/FXIL3PHIMGXVJL7JJVMZJONZUY:/var/lib/docker/overlay2/l/B6MEINJ2DGOZOJATNFI4AAGHEV:/var/lib/docker/overlay2/l/CP6GHBPDYTWTSWATLZJK3ZHKR7:/var/lib/docker/overlay2/l/MKPBKZ3WIRPIG'
+Unexpected end of /proc/mounts line `KWOKF4FNCNY7K:/var/lib/docker/overlay2/l/F2SHGRCY3KJ5YFKDO44LEROXIJ:/var/lib/docker/overlay2/l/YPKG654UUHBTVA7GC5BWQ3NPRU:/var/lib/docker/overlay2/l/IIFEZ2C4CGEITRDROFY3Y5R2EJ:/var/lib/docker/overlay2/l/PUQGHF46374JRRXM22IGQ3RE3K:/var/lib/docker/overlay2/l/DK75K6TOBTOPBFIBN43MUKVSQG:/var/lib/docker/overlay2/l/JS7LJIEYBJJE5VF6OABL53C3EB:/var/lib/docker/overlay2/l/4DDPFMHWJ57FAVAZRG6MEJ2MDA:/var/lib/docker/overlay2/l/VY7MQDCFF3CN7HRAUXLDYA4E34:/var/lib/docker/overlay2/l/QNYGIZUBLLWYVUPNSXTNHWL7RW:/var/lib/do'
+Unexpected end of /proc/mounts line `cker/overlay2/l/WC4KLFZ2QWVNSQV7LHKMDBPNR7:/var/lib/docker/overlay2/l/6S3V5S4XNCAO5SFIWVTTJ4ZM6E:/var/lib/docker/overlay2/l/VXRDNNWQV2KF4ZAXPYW5YJLQUY:/var/lib/docker/overlay2/l/5SO4AEGFVQG3NUN7YJJO534RO5:/var/lib/docker/overlay2/l/KVJ6XT2DGMBLE235FG4P7MBTAM:/var/lib/docker/overlay2/l/3J2NAV4VPZ7A26WYCAJCXEW4EU:/var/lib/docker/overlay2/l/METKIFSZ75VAUUAY4AUAHUCYHP:/var/lib/docker/overlay2/l/7A6COVOHTZNIG2X5CMCPSIDF5F:/var/lib/docker/overlay2/l/7YOM5WYTD6BZPNKAG73WMXYIUK:/var/lib/docker/overlay2/l/ZNLBQRJG5'
+Unexpected end of /proc/mounts line `4VJRK5KULA6YRRANI:/var/lib/docker/overlay2/l/5KORNIHRKXJM5PXUOINPPB5O4R:/var/lib/docker/overlay2/l/S7LHJTXMK4RIUZ7F76YE4IBPHS:/var/lib/docker/overlay2/l/TYIGUYQ7FMJ7AM3MKC5GI3B2NP:/var/lib/docker/overlay2/l/CQMTDMOY5YOXTAPOEAEAGIWEKB:/var/lib/docker/overlay2/l/DLQ4A5EPVM4UENCOKOKYDXSSIK:/var/lib/docker/overlay2/l/CPU2URYJZ62OEJC7KV7YHZI6RW:/var/lib/docker/overlay2/l/XATJ7OEM26RYLQQQCP2TW3NC3N:/var/lib/docker/overlay2/l/EIJZPKQR2COOLKLJY27IVWSX6R:/var/lib/docker/overlay2/l/3QUQP2CWZUSOD6D45OR325762K:/var/li'
+--------------------------------------------------------------------------
+[[55730,1],0]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: 33cee7eff323
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+ 
+-------------------------------------------------------------------------------
+|                               DAFoam v3.0.3                                 |
+-------------------------------------------------------------------------------
+ 
+I/O    : uncollated
+Case   : /home/dafoamuser/mount/Documents/GitHub/humpLES
+nProcs : 1
+Create time
+
+Overriding DebugSwitches according to controlDict
+    SolverPerformance 0;
+
+--> FOAM Warning : 
+    From function void Foam::Time::setControls()
+    in file db/Time/Time.C at line 329
+    Reading "/home/dafoamuser/mount/Documents/GitHub/humpLES/0/uniform/time"
+    Time read from time dictionary 1792 differs from actual time 0.
+    This may cause unexpected database behaviour. If you are not interested
+    in preserving time state delete the time dictionary.
+Create mesh for time = 0
+Initializing mesh and runtime for DASolver
+I/O    : uncollated
+Case   : /home/dafoamuser/mount/Documents/GitHub/humpLES
+nProcs : 1
+Create time
+
+Overriding DebugSwitches according to controlDict
+    SolverPerformance 0;
+
+--> FOAM Warning : 
+    From function void Foam::Time::setControls()
+    in file db/Time/Time.C at line 328
+    Reading "/home/dafoamuser/mount/Documents/GitHub/humpLES/0/uniform/time"
+    Time read from time dictionary 1792 differs from actual time 0.
+    This may cause unexpected database behaviour. If you are not interested
+    in preserving time state delete the time dictionary.
+Create mesh for time = 0
+Initializing mesh and runtime for DASolver
+Initializing fields for DASimpleFoam
+Create simpleControl.
+
+SIMPLE: no convergence criteria found. Calculations will run for 50000 steps.
+
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Creating source term. 
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kOmegaSSTFieldInversion
+Selecting patchDistMethod meshWave
+No MRF models present
+
+Adjoint States: 
+5
+(
+U volVectorState
+k modelState
+phi surfaceScalarState
+p volScalarState
+omega modelState
+)
+Global Cells: 44064
+Global Faces: 176772
+Global Xv: 267486
+Undecomposed points: 89162
+Global Adjoint States: 441156
+
+SIMPLE: no convergence criteria found. Calculations will run for 50000 steps.
+
+DACheckMesh Thresholds: 
+maxNonOrth: 25
+maxSkewness: 2.5
+maxAspectRatio: 25000
+maxIncorrectlyOrientedFaces: 0
+    Adding cells with centre within boxes 1((-10 -10 -10) (10 10 10))
+    Adding cells with centre within boxes 1((-10 -10 -10) (10 10 10))
+Initializing fields for DASimpleFoam
+Create simpleControl.
+
+SIMPLE: no convergence criteria found. Calculations will run for 50000 steps.
+
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Creating source term. 
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kOmegaSSTFieldInversion
+Selecting patchDistMethod meshWave
+No MRF models present
+
+Adjoint States: 
+5
+(
+U volVectorState
+k modelState
+phi surfaceScalarState
+p volScalarState
+omega modelState
+)
+Global Cells: 44064
+Global Faces: 176772
+Global Xv: 267486
+Undecomposed points: 89162
+Global Adjoint States: 441156
+
+SIMPLE: no convergence criteria found. Calculations will run for 50000 steps.
+
+DACheckMesh Thresholds: 
+maxNonOrth: 25
+maxSkewness: 2.5
+maxAspectRatio: 25000
+maxIncorrectlyOrientedFaces: 0
+    Adding cells with centre within boxes 1((-10 -10 -10) (10 10 10))
+    Adding cells with centre within boxes 1((-10 -10 -10) (10 10 10))
+DAFoam option dictionary: 
+{
+    solverName      DASimpleFoam;
+    primalMinResTol 1e-09;
+    primalBC
+    {
+    }
+    normalizeStates
+    {
+        p               0.5;
+        phi             1;
+        U               1;
+        T               1;
+        nuTilda         1;
+        k               1.0684e-07;
+        epsilon         1;
+        omega           10;
+        p_rgh           1;
+        D               1;
+    }
+    objFunc
+    {
+        FI
+        {
+            velocity
+            {
+                type            fieldInversion;
+                source          boxToCell;
+                min             3 { -10 };
+                max             3 { 10 };
+                data            USingleComponentData;
+                velocityComponent 3 ( 1 0 0 );
+                scale           1;
+                addToAdjoint    1;
+                weightedSum     1;
+                weight          4.414621225498852e-05;
+            }
+            beta
+            {
+                type            fieldInversion;
+                source          boxToCell;
+                min             3 { -10 };
+                max             3 { 10 };
+                data            beta;
+                scale           1e-06;
+                addToAdjoint    1;
+                weightedSum     0;
+            }
+        }
+    }
+    designVar
+    {
+        beta
+        {
+            designVarType   Field;
+            fieldName       betaFieldInversion;
+            fieldType       scalar;
+        }
+    }
+    designSurfaces  1 ( b6-humpWall );
+    fsi
+    {
+        pRef            0;
+        propMovement    0;
+    }
+    aeroPropulsive
+    {
+    }
+    primalOnly      0;
+    fvSource
+    {
+    }
+    adjEqnSolMethod Krylov;
+    primalVarBounds
+    {
+        UMax            1000;
+        UMin            -1000;
+        pMax            500000;
+        pMin            20000;
+        p_rghMax        500000;
+        p_rghMin        20000;
+        eMax            500000;
+        eMin            100000;
+        TMax            1000;
+        TMin            100;
+        hMax            500000;
+        hMin            100000;
+        DMax            1e+16;
+        DMin            -1e+16;
+        rhoMax          5;
+        rhoMin          0.2;
+        nuTildaMax      1e+16;
+        nuTildaMin      1e-16;
+        kMax            1e+16;
+        kMin            1e-16;
+        omegaMax        1e+16;
+        omegaMin        1e-16;
+        epsilonMax      1e+16;
+        epsilonMin      1e-16;
+        ReThetatMax     1e+16;
+        ReThetatMin     1e-16;
+        gammaIntMax     1e+16;
+        gammaIntMin     1e-16;
+    }
+    multiPoint      0;
+    nMultiPoints    1;
+    adjPartDerivFDStep
+    {
+        State           1e-07;
+        FFD             0.001;
+        BC              0.01;
+        AOA             0.001;
+        ACTP            0.01;
+        ACTD            0.01;
+        ACTL            0.01;
+    }
+    transonicPCOption -1;
+    unsteadyAdjoint
+    {
+        mode            None;
+        nTimeInstances  -1;
+        periodicity     -1;
+    }
+    objFuncAvgStart 1;
+    adjPCLag        100;
+    useAD
+    {
+        mode            reverse;
+        dvName          None;
+        seedIndex       -9999;
+    }
+    rigidBodyMotion
+    {
+        mode            dummy;
+    }
+    rootDir         None;
+    runStatus       None;
+    printPYDAFOAMOptions 0;
+    printDAOptions  1;
+    debug           0;
+    writeJacobians  1 ( None );
+    printInterval   100;
+    printIntervalUnsteady 500;
+    primalMinResTolDiff 100;
+    adjUseColoring  1;
+    adjEqnOption
+    {
+        globalPCIters   0;
+        asmOverlap      1;
+        localPCIters    1;
+        jacMatReOrdering natural;
+        pcFillLevel     2;
+        gmresMaxIters   3000;
+        gmresRestart    1000;
+        gmresRelTol     1e-08;
+        gmresAbsTol     1e-14;
+        gmresTolDiff    100;
+        useNonZeroInitGuess 0;
+        useMGSO         0;
+        printInfo       1;
+        fpMaxIters      1000;
+        dynAdjustTol    1;
+    }
+    normalizeResiduals 10 ( URes pRes p_rghRes nuTildaRes phiRes TRes DRes kRes omegaRes epsilonRes );
+    maxResConLv4JacPCMat
+    {
+        pRes            2;
+        phiRes          1;
+        URes            2;
+        TRes            2;
+        nuTildaRes      2;
+        kRes            2;
+        epsilonRes      2;
+        omegaRes        2;
+        p_rghRes        2;
+        DRes            2;
+    }
+    jacLowerBounds
+    {
+        dRdW            1e-30;
+        dRdWPC          1e-30;
+    }
+    maxTractionBCIters 100;
+    decomposeParDict
+    {
+        method          scotch;
+        simpleCoeffs
+        {
+            n               3 ( 2 2 1 );
+            delta           0.001;
+        }
+        preservePatches 1 ( None );
+        singleProcessorFaceSets 1 ( None );
+    }
+    adjStateOrdering cell;
+    meshSurfaceFamily None;
+    designSurfaceFamily designSurfaces;
+    checkMeshThreshold
+    {
+        maxAspectRatio  25000;
+        maxNonOrth      25;
+        maxSkewness     2.5;
+        maxIncorrectlyOrientedFaces 0;
+    }
+    writeSensMap    1 ( NONE );
+    writeDeformedFFDs 0;
+    maxCorrectBCCalls 10;
+    writeMinorIterations 0;
+    runLowOrderPrimal4PC
+    {
+        active          0;
+    }
+    wingProp
+    {
+        nForceSections  10;
+        axis            3 ( 1 0 0 );
+    }
+}
+
+Reading OpenFOAM mesh information...
+I/O    : uncollated
+Case   : /home/dafoamuser/mount/Documents/GitHub/humpLES
+nProcs : 1
+Reading the OpenFOAM mesh..
+Overriding DebugSwitches according to controlDict
+    SolverPerformance 0;
+
+--> FOAM Warning : 
+    From function void Foam::Time::setControls()
+    in file db/Time/Time.C at line 329
+    Reading "/home/dafoamuser/mount/Documents/GitHub/humpLES/0/uniform/time"
+    Time read from time dictionary 1792 differs from actual time 0.
+    This may cause unexpected database behaviour. If you are not interested
+    in preserving time state delete the time dictionary.
+I/O    : uncollated
+pyDAFoam initialization done!
+I/O    : uncollated
+Case   : /home/dafoamuser/mount/Documents/GitHub/humpLES
+nProcs : 1
+Reading the OpenFOAM mesh..
+Overriding DebugSwitches according to controlDict
+    SolverPerformance 0;
+
+--> FOAM Warning : 
+    From function void Foam::Time::setControls()
+    in file db/Time/Time.C at line 329
+    Reading "/home/dafoamuser/mount/Documents/GitHub/humpLES/0/uniform/time"
+    Time read from time dictionary 1792 differs from actual time 0.
+    This may cause unexpected database behaviour. If you are not interested
+    in preserving time state delete the time dictionary.
+#------------------------------#
+ Total Volume Nodes :     89162 
+#------------------------------#
+I/O    : uncollated
++---------------------------------------+
+|     All IDWarp Options:               |
++---------------------------------------+
+{'LdefFact': 1.0,
+ 'aExp': 3.0,
+ 'alpha': 0.25,
+ 'bExp': 5.0,
+ 'bucketSize': 8,
+ 'cornerAngle': 30.0,
+ 'errTol': 0.0005,
+ 'evalMode': 'fast',
+ 'fileType': 'openfoam',
+ 'gridFile': '/home/dafoamuser/mount/Documents/GitHub/humpLES',
+ 'restartFile': None,
+ 'specifiedSurfaces': None,
+ 'symmTol': 1e-06,
+ 'symmetryPlanes': [[[0.0, 0.0, 0.0], [0.0, 0.0, 1.0]],
+                    [[0.0, 0.0, 0.1], [0.0, 0.0, 1.0]]],
+ 'symmetrySurfaces': None,
+ 'useRotations': True,
+ 'zeroCornerRotations': True}
+OrderedDict([('b2-symmetry1', [0]), ('b3-symmetry2', [1]), ('b4-inlet', [2]), ('b5-outlet', [3]), ('b6-humpWall', [4]), ('b7-topWall', [5]), ('allSurfaces', [0, 1, 2, 3, 4, 5]), ('allWalls', [4, 5]), ('designSurfaces', [4])])
+#--------------------------------#
+ Unique Surface Nodes :      1636 
+#--------------------------------#
+ Computing Denomenator Estimate...
+ Load Balancing...
+ Finished Mesh Initialization.
++-------------------- Symmetry Planes -------------------+
+|           Point                        Normal          |
+| (  0.000   0.000   0.000)    (  0.000   0.000   1.000) |
+| (  0.000   0.000   0.100)    (  0.000   0.000   1.000) |
++--------------------------------------------------------+
+
+
++--------------------------------------------------------------------------+
+|                  Evaluating Objective Functions 001                      |
++--------------------------------------------------------------------------+
+Design Variables: 
+{'beta': array([1.+0.j, 1.+0.j, 1.+0.j, ..., 1.+0.j, 1.+0.j, 1.+0.j])}
+DVGeo PointSet UpToDate: False
+Updating DVGeo PointSet....
+DVGeo PointSet UpToDate: True
+Warping the volume mesh....
+Running Primal Solver 001
+Previous solution time -1e+10 not found and nothing deleted.
+No finite volume options present
+
+Starting time loop
+
+Checking mesh quality for time = 0
+    Overall domain bounding box (-6.390000000000438 -1.12825945486811e-47 0) (4.000000000006571 0.90905 0.1)
+    Mesh has 3 geometric (non-empty/wedge) directions 3{1}
+    Mesh has 3 solution (non-empty) directions 3{1}
+    Boundary openness (-2.12896812824888e-19 -3.894449945889857e-18 -4.502282870377295e-15) OK.
+    Max cell openness = 1.400115880529791e-14 OK.
+    Max aspect ratio = 23763.55217688216 OK.
+    Minimum face area = 2.699628682081692e-08. Maximum face area = 0.03806457434400015.  Face area magnitudes OK.
+    Min volume = 2.699628682095698e-09. Max volume = 0.002818261837798124.  Total volume = 0.9334963869720833.  Cell volumes OK.
+    Mesh non-orthogonality Max: 44.28744145256739 average: 18.72720772889406
+   *Number of severely non-orthogonal (> 25 degrees) faces: 23388.
+    Non-orthogonality check OK.
+  <<Writing 23388 non-orthogonal faces to set nonOrthoFaces
+    Face pyramids OK.
+    Max skewness = 2.482874996968957 OK.
+    Coupled point location match (average 0) OK.
+
+Mesh OK.
+
+Time = 1
+
+U Initial residual: (2.242115452962125e-09 3.062924152881899e-09 0.03158403296709281)
+U   Final residual: (2.339887128498433e-11 7.676052348739371e-11 7.37135658873755e-11)
+p Initial residual: 2.815841296328246e-08
+p   Final residual: 1.155424117964285e-09
+Time step continuity errors : sum local = 2.963834099894575e-10
+                                 global = -7.70486216273137e-12
+                             cumulative = -7.70486216273137e-12
+omega Initial residual: 1.671139600247681e-10
+        Final residual: 1.052971842569231e-11
+k Initial residual: 1.886203770139649e-07
+    Final residual: 7.862791831170472e-11
+Bounding k>1e-16
+yPlus min: 0.02189014261683469 max: 1635.55274386059 mean: 735.2719405851055
+FI-velocity-fieldInversion: 0.99124259987147
+FI-beta-fieldInversion: 0
+ExecutionTime = 18.09 s  ClockTime = 18 s
+
