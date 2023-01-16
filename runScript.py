@@ -51,7 +51,7 @@ daOptions = {
                 "source": "boxToCell",
                 "min": [-10.0, -10.0, -10.0],
                 "max": [10.0, 10.0, 10.0],
-                "data": "UData", 
+                "data": "USingleComponentData", 
                 "scale": 1,
                 "addToAdjoint": True, 
                 "weightedSum": True, 
